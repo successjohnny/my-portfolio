@@ -12,31 +12,64 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <header>
+
         <nav class="navbar">
 
             <a href="#home" class="logo">
                 John Ikwuobe
             </a>
 
+            <button
+                class="menu-toggle"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
             </ul>
 
         </nav>
+
     </header>
 
 
-    <!-- Main Content -->
     <main>
 
-        <!-- Hero Section -->
+        <!-- =========================
+             HERO
+        ========================== -->
+
         <section id="home" class="hero">
 
             <div class="hero-content">
@@ -45,9 +78,14 @@
                     Hello, I'm John Ikwuobe
                 </p>
 
+                <p class="hero-role">
+                    AI-Native Full-Stack Developer · Software Engineer
+                </p>
+
                 <h1>
                     AI-Native Full-Stack Developer
-                    <span>& Software Engineer</span>
+                    &amp;
+                    Software Engineer
                 </h1>
 
                 <p class="hero-description">
@@ -58,11 +96,17 @@
 
                 <div class="hero-buttons">
 
-                    <a href="#projects" class="btn primary-btn">
+                    <a
+                        href="#projects"
+                        class="btn primary-btn"
+                    >
                         View My Projects
                     </a>
 
-                    <a href="#contact" class="btn secondary-btn">
+                    <a
+                        href="#contact"
+                        class="btn secondary-btn"
+                    >
                         Contact Me
                     </a>
 
@@ -79,25 +123,71 @@
 
             </div>
 
+
+            <!-- HERO PHOTO -->
+
+            <div class="hero-image-container">
+
+                <div class="hero-image-frame">
+
+                    <img
+                        src="images/john-ikwuobe.png"
+                        alt="John Ikwuobe - AI-Native Full-Stack Developer"
+                        class="hero-image"
+                    >
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <!-- About Section -->
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
         <section id="about" class="section">
 
             <h2>About Me</h2>
 
             <p>
-                I am a Mechanical Engineer transitioning into software
-                engineering as an AI-Native Full-Stack Developer. I combine
-                engineering experience with software development and AI to
-                build practical solutions to real-world problems.
+                I am a Mechanical Engineer with over 15 years of
+                professional experience in engineering operations,
+                project coordination, equipment maintenance, and
+                technical problem-solving.
+            </p>
+
+            <p>
+                I decided to move into software engineering because
+                of my strong interest in building software and solving
+                problems through technology. As artificial intelligence
+                continues to become an important part of modern
+                technology and everyday life, I am also developing my
+                skills in AI and learning how to integrate it into
+                practical software solutions.
+            </p>
+
+            <p>
+                Today, I am building my skills as an AI-Native
+                Full-Stack Developer and Software Engineer, using
+                technologies such as Python, Go, FastAPI, SQL, HTML,
+                CSS, Git, and AI tools.
+            </p>
+
+            <p>
+                My goal is to combine the problem-solving mindset I
+                developed through engineering with software development
+                and AI to build useful solutions to real-world problems.
             </p>
 
         </section>
 
 
-        <!-- Skills Section -->
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
         <section id="skills" class="section">
 
             <h2>Skills</h2>
@@ -105,13 +195,21 @@
             <div class="skills-container">
 
                 <div>Python</div>
+
                 <div>Go</div>
+
                 <div>FastAPI</div>
+
                 <div>HTML5</div>
+
                 <div>CSS3</div>
+
                 <div>SQL</div>
+
                 <div>Git</div>
+
                 <div>GitHub</div>
+
                 <div>AI</div>
 
             </div>
@@ -119,56 +217,116 @@
         </section>
 
 
-        <!-- Projects Section -->
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
         <section id="projects" class="section">
 
             <h2>Featured Projects</h2>
 
             <div class="projects-container">
 
-                <!-- Project 1 -->
+                <!-- Inventory Management System -->
+
                 <article class="project-card">
 
-                    <h3>Inventory Management System</h3>
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Inventory Management System
+                    </h3>
 
                     <p>
-                        A web-based inventory management system built with
-                        Python and FastAPI for managing products, stock
-                        movements, inventory levels, and product information.
+                        A web-based inventory management system designed
+                        to manage products, stock levels, stock movements,
+                        categories, and low-stock alerts.
                     </p>
 
                     <p class="technologies">
                         Python · FastAPI · SQLAlchemy · HTML · CSS
                     </p>
 
+                    <div class="project-links">
+
+                        <a
+                            href="#"
+                            class="project-link"
+                        >
+                            Live Demo
+                        </a>
+
+                        <a
+                            href="#"
+                            class="project-link"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
                 </article>
 
 
-                <!-- Project 2 -->
+                <!-- ASCII Art Web -->
+
                 <article class="project-card">
 
-                    <h3>ASCII Art Web</h3>
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <h3>
+                        ASCII Art Web
+                    </h3>
 
                     <p>
-                        A web application built with Go that converts text
-                        into ASCII art and presents the generated output
-                        through a web interface.
+                        A web application built with Go that converts
+                        user-entered text into ASCII art and displays
+                        the generated result through a web interface.
                     </p>
 
                     <p class="technologies">
                         Go · HTML · CSS · HTTP
                     </p>
 
+                    <div class="project-links">
+
+                        <a
+                            href="#"
+                            class="project-link"
+                        >
+                            Live Demo
+                        </a>
+
+                        <a
+                            href="#"
+                            class="project-link"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
                 </article>
 
 
-                <!-- Project 3 -->
+                <!-- Go Reloaded -->
+
                 <article class="project-card">
 
-                    <h3>Go Reloaded</h3>
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Go Reloaded
+                    </h3>
 
                     <p>
-                        A command-line text processing project developed
+                        A command-line text-processing application built
                         with Go, demonstrating string manipulation,
                         transformations, and file processing.
                     </p>
@@ -177,6 +335,17 @@
                         Go · CLI · File Processing
                     </p>
 
+                    <div class="project-links">
+
+                        <a
+                            href="#"
+                            class="project-link"
+                        >
+                            GitHub
+                        </a>
+
+                    </div>
+
                 </article>
 
             </div>
@@ -184,36 +353,257 @@
         </section>
 
 
-        <!-- Experience Section -->
+        <!-- =========================
+             EXPERIENCE
+        ========================== -->
+
         <section id="experience" class="section">
 
             <h2>Experience</h2>
 
-            <p>
-                Over 15 years of professional experience in engineering
-                operations, project coordination, technical reporting,
-                equipment maintenance, and industrial operations.
-            </p>
+            <div class="experience-container">
+
+                <!-- Software Engineering -->
+
+                <article class="experience-card">
+
+                    <div class="experience-date">
+                        2026 – Present
+                    </div>
+
+                    <div class="experience-content">
+
+                        <h3>
+                            AI-Native Full-Stack Developer
+                        </h3>
+
+                        <p class="experience-company">
+                            Learn2Earn Otukpo Campus
+                        </p>
+
+                        <p>
+                            Currently developing practical software
+                            engineering skills through hands-on projects
+                            involving Python, Go, FastAPI, SQL, web
+                            development, Git, and artificial intelligence.
+                        </p>
+
+                        <p>
+                            Building real-world applications while
+                            developing software engineering, problem-solving,
+                            debugging, and systems-thinking skills.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Globacom -->
+
+                <article class="experience-card">
+
+                    <div class="experience-date">
+                        2017 – 2025
+                    </div>
+
+                    <div class="experience-content">
+
+                        <h3>
+                            Business Development Executive
+                        </h3>
+
+                        <p class="experience-company">
+                            Globacom Nigeria Limited
+                        </p>
+
+                        <p>
+                            Worked in a professional environment involving
+                            customer support, stakeholder engagement,
+                            business operations, reporting, coordination,
+                            and relationship management.
+                        </p>
+
+                        <p>
+                            Developed strong communication, analytical,
+                            problem-solving, and organizational skills that
+                            continue to support my transition into software
+                            engineering.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Engineering Background -->
+
+                <article class="experience-card">
+
+                    <div class="experience-date">
+                        Earlier Career
+                    </div>
+
+                    <div class="experience-content">
+
+                        <h3>
+                            Mechanical Engineering
+                        </h3>
+
+                        <p class="experience-company">
+                            Engineering &amp; Industrial Operations
+                        </p>
+
+                        <p>
+                            Developed professional experience in
+                            engineering operations, equipment maintenance,
+                            technical reporting, project coordination,
+                            and industrial problem-solving.
+                        </p>
+
+                        <p>
+                            This engineering background provides the
+                            foundation for my structured approach to
+                            solving technical problems and building
+                            practical software solutions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
 
         </section>
 
 
-        <!-- Contact Section -->
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
         <section id="contact" class="section">
 
-            <h2>Let's Build Something Useful</h2>
+            <h2>
+                Let's Build Something Useful
+            </h2>
 
-            <p>
+            <p class="contact-intro">
                 I'm interested in building practical software solutions
                 that combine engineering, software development, and AI.
             </p>
+
+            <div class="contact-container">
+
+                <!-- Contact Form -->
+
+                <form class="contact-form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="your@email.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Tell me about your project..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="btn primary-btn"
+                    >
+                        Send Message
+                    </button>
+
+                </form>
+
+
+                <!-- Contact Links -->
+
+                <div class="contact-links">
+
+                    <h3>
+                        Connect With Me
+                    </h3>
+
+                    <p>
+                        You can reach me directly by email or explore
+                        my software projects on GitHub.
+                    </p>
+
+                    <a
+                        href="mailto:successjohnny@gmail.com"
+                        class="contact-link"
+                    >
+                        successjohnny@gmail.com
+                    </a>
+
+                    <br>
+                    <br>
+
+                    <a
+                        href="https://github.com/successjohnny"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-link"
+                    >
+                        GitHub
+                    </a>
+
+                </div>
+
+            </div>
 
         </section>
 
     </main>
 
 
-    <!-- Footer -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
     <footer>
 
         <p>
@@ -223,7 +613,10 @@
     </footer>
 
 
-    <!-- JavaScript -->
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
     <script src="js/script.js"></script>
 
 </body>
