@@ -1,802 +1,793 @@
-/* =========================
-   RESET
-========================= */
+/* =========================================
+   JOHN IKWUOBE — PORTFOLIO
+   COMPLETE VISUAL REDESIGN
+========================================= */
 
-* {
+/* =========================================
+   1. DESIGN SYSTEM
+========================================= */
+
+:root {
+    --bg: #0f172a;
+    --bg-deep: #0b1220;
+    --surface: #152238;
+    --surface-hover: #1b2c46;
+
+    --accent: #67e8f9;
+    --accent-light: #a5f3fc;
+    --accent-soft: rgba(103, 232, 249, 0.10);
+
+    --heading: #f8fafc;
+    --text: #cbd5e1;
+    --muted: #a8b7cc;
+
+    --border: #334155;
+
+    --radius: 18px;
+    --container: 1180px;
+
+    --shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================================
+   2. RESET AND GENERAL STYLES
+========================================= */
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-/* =========================
-   GENERAL
-========================= */
-
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
-    font-family: Arial, sans-serif;
-
-    background: #0f172a;
-    color: #e2e8f0;
-
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    overflow-wrap: break-word;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
 }
 
 ul {
     list-style: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
 
-/* =========================
-   NAVIGATION
-========================= */
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--bg-deep);
+}
+
+/* =========================================
+   3. NAVIGATION
+========================================= */
 
 header {
     position: fixed;
-
     top: 0;
     left: 0;
-
     width: 100%;
-
     z-index: 1000;
 
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(15, 23, 42, 0.96);
+    border-bottom: 1px solid rgba(103, 232, 249, 0.12);
 
-    border-bottom: 1px solid #334155;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
 .navbar {
-    max-width: 1150px;
-
-    margin: auto;
-
-    padding: 18px 20px;
+    width: min(var(--container), calc(100% - 48px));
+    min-height: 82px;
+    margin: 0 auto;
 
     display: flex;
-
     align-items: center;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .logo {
-    font-size: 1.3rem;
-    font-weight: 700;
-
-    color: #f8fafc;
-
-    transition: color 0.3s ease;
+    color: var(--heading);
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: -0.7px;
+    white-space: nowrap;
 }
 
 .logo:hover {
-    color: #67e8f9;
+    color: var(--accent);
 }
 
 .nav-links {
     display: flex;
-
-    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px 18px;
 }
 
 .nav-links a {
-    color: #cbd5e1;
+    display: inline-block;
+    padding: 8px 0;
 
-    font-size: 0.9rem;
+    color: var(--text);
+    font-size: 0.86rem;
+    font-weight: 600;
 
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-    color: #67e8f9;
+    color: var(--accent);
 }
 
 .menu-toggle {
     display: none;
 
-    background: none;
+    color: var(--heading);
+    background: transparent;
 
-    border: none;
+    border: 1px solid var(--border);
+    border-radius: 10px;
 
-    color: #e2e8f0;
-
-    font-size: 1.8rem;
-
-    cursor: pointer;
+    padding: 4px 12px;
+    font-size: 1.6rem;
+    line-height: 1.3;
 }
 
-
-/* =========================
-   HERO
-========================= */
+/* =========================================
+   4. HERO SECTION
+========================================= */
 
 .hero {
+    width: min(var(--container), calc(100% - 48px));
     min-height: 100vh;
+    min-height: 100svh;
+    margin: 0 auto;
 
-    max-width: 1150px;
-
-    margin: auto;
-
-    padding: 140px 20px 80px;
+    padding: 150px 0 100px;
 
     display: grid;
-
-    grid-template-columns:
-        1.45fr 0.85fr;
-
-    gap: 60px;
-
+    grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.85fr);
     align-items: center;
+    gap: 65px;
 }
 
 .hero-content {
+    min-width: 0;
     max-width: 720px;
 }
 
 .hero-content::before {
     content: "";
-
     display: block;
 
-    width: 70px;
-    height: 4px;
-
-    background: #67e8f9;
+    width: 65px;
+    height: 5px;
 
     margin-bottom: 30px;
+
+    background: var(--accent);
+    border-radius: 20px;
 }
 
 .hero-intro {
-    color: #cbd5e1;
-
+    color: var(--accent);
     font-size: 1.05rem;
-
-    margin-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin-bottom: 14px;
 }
 
 .hero-role {
-    color: #67e8f9;
+    display: inline-block;
 
-    font-size: 1rem;
-    font-weight: 600;
+    color: var(--accent-light);
+    background: var(--accent-soft);
 
-    margin-bottom: 18px;
+    border: 1px solid rgba(103, 232, 249, 0.25);
+    border-radius: 100px;
+
+    padding: 7px 15px;
+    margin-bottom: 24px;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
 }
 
 .hero h1 {
-    color: #f8fafc;
+    max-width: 760px;
 
-    font-size: 3.7rem;
+    color: var(--heading);
+    font-size: clamp(2.7rem, 4.5vw, 4.3rem);
+    font-weight: 800;
+    line-height: 1.12;
+    letter-spacing: -2px;
 
-    line-height: 1.1;
-
-    margin-bottom: 25px;
+    margin-bottom: 28px;
 }
 
 .hero-description {
-    max-width: 650px;
+    max-width: 620px;
 
-    color: #94a3b8;
-
+    color: var(--muted);
     font-size: 1.1rem;
+    line-height: 1.9;
 
-    margin-bottom: 35px;
+    margin-bottom: 36px;
 }
 
-
-/* =========================
-   BUTTONS
-========================= */
+/* =========================================
+   5. BUTTONS
+========================================= */
 
 .hero-buttons {
     display: flex;
-
     flex-wrap: wrap;
-
-    gap: 12px;
+    gap: 14px;
 }
 
 .btn {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    padding: 12px 20px;
+    min-height: 48px;
+    padding: 12px 22px;
 
     border: 1px solid transparent;
-
-    border-radius: 5px;
+    border-radius: 10px;
 
     font-size: 0.9rem;
-    font-weight: 600;
-
-    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
 
     transition:
-        transform 0.3s ease,
-        background 0.3s ease,
-        border-color 0.3s ease,
-        color 0.3s ease;
+        transform 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
 }
 
 .primary-btn {
-    background: #67e8f9;
+    background: var(--accent);
+    color: var(--bg-deep);
+    border-color: var(--accent);
 
-    color: #0f172a;
-
-    border-color: #67e8f9;
+    box-shadow: 0 10px 28px rgba(103, 232, 249, 0.14);
 }
 
 .primary-btn:hover {
-    background: #a5f3fc;
+    background: var(--accent-light);
+    border-color: var(--accent-light);
 
-    border-color: #a5f3fc;
+    box-shadow: 0 14px 32px rgba(103, 232, 249, 0.22);
 }
 
 .secondary-btn {
-    background: transparent;
-
-    color: #e2e8f0;
-
-    border-color: #475569;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--heading);
+    border-color: #52637a;
 }
 
 .secondary-btn:hover {
-    color: #67e8f9;
-
-    border-color: #67e8f9;
+    color: var(--accent);
+    border-color: var(--accent);
+    background: var(--accent-soft);
 }
 
-
-/* =========================
-   HERO IMAGE
-========================= */
+/* =========================================
+   6. HERO PROFILE IMAGE
+========================================= */
 
 .hero-image-container {
-    display: flex;
+    min-width: 0;
 
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-image-frame {
     position: relative;
 
-    width: min(360px, 100%);
-
+    width: min(340px, 100%);
     aspect-ratio: 1 / 1;
 
-    padding: 8px;
+    padding: 9px;
 
     border-radius: 50%;
 
     background: linear-gradient(
         135deg,
-        #67e8f9,
+        var(--accent),
         #818cf8,
-        #fbbf24
+        var(--accent)
     );
 
     box-shadow:
-        0 25px 60px rgba(0, 0, 0, 0.4);
+        0 0 0 15px rgba(103, 232, 249, 0.04),
+        0 0 0 35px rgba(103, 232, 249, 0.025),
+        0 30px 65px rgba(0, 0, 0, 0.35);
 }
 
 .hero-image {
     width: 100%;
     height: 100%;
 
-    display: block;
-
     object-fit: cover;
     object-position: center top;
 
+    border: 6px solid var(--bg);
     border-radius: 50%;
-
-    border: 5px solid #0f172a;
 }
 
-
-/* =========================
-   SECTIONS
-========================= */
+/* =========================================
+   7. SHARED SECTIONS
+========================================= */
 
 .section {
-    max-width: 1150px;
-
-    margin: auto;
-
-    padding: 100px 20px;
+    width: min(var(--container), calc(100% - 48px));
+    margin: 0 auto;
+    padding: 100px 0;
 }
 
 .section h2 {
-    color: #f8fafc;
+    color: var(--heading);
 
-    font-size: 2.3rem;
+    font-size: clamp(1.9rem, 3vw, 2.55rem);
+    font-weight: 800;
+    line-height: 1.25;
+    letter-spacing: -1px;
 
-    margin-bottom: 40px;
+    margin-bottom: 42px;
 }
 
 .section h2::after {
     content: "";
-
     display: block;
 
-    width: 45px;
-    height: 3px;
+    width: 58px;
+    height: 4px;
 
-    background: #67e8f9;
+    margin-top: 15px;
 
-    margin-top: 12px;
+    background: var(--accent);
+    border-radius: 20px;
 }
 
 .section-intro {
-    max-width: 760px;
+    max-width: 780px;
 
-    margin: -10px 0 45px;
-
-    color: #94a3b8;
-
+    color: var(--muted);
     font-size: 1.05rem;
+    line-height: 1.85;
+
+    margin: -12px 0 42px;
 }
 
-
-/* =========================
-   ABOUT
-========================= */
+/* =========================================
+   8. ABOUT
+========================================= */
 
 .about-content {
-    max-width: 850px;
+    max-width: 940px;
+
+    padding: 36px 40px;
+
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 var(--radius) var(--radius) 0;
+
+    box-shadow: var(--shadow);
 }
 
 .about-content p {
-    color: #94a3b8;
-
-    font-size: 1.05rem;
-
-    margin-bottom: 20px;
+    color: var(--text);
+    font-size: 1.04rem;
+    line-height: 1.9;
+    margin-bottom: 18px;
 }
 
+.about-content p:last-child {
+    margin-bottom: 0;
+}
 
-/* =========================
-   SKILLS
-========================= */
+/* =========================================
+   9. SHARED CARD DESIGN
+========================================= */
+
+.skill-card,
+.project-card,
+.certification-card,
+.experience-card,
+.contact-form {
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+}
+
+.skill-card,
+.project-card,
+.certification-card,
+.experience-card {
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        border-color 0.25s ease;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.certification-card:hover,
+.experience-card:hover {
+    transform: translateY(-6px);
+    background: var(--surface-hover);
+    border-color: rgba(103, 232, 249, 0.65);
+}
+
+/* =========================================
+   10. SKILLS
+========================================= */
 
 .skills-container {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
 }
 
 .skill-card {
-    background: #111c31;
-
-    border: 1px solid #334155;
-
-    border-radius: 8px;
-
-    padding: 25px;
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease;
-}
-
-.skill-card:hover {
-    transform: translateY(-5px);
-
-    border-color: #67e8f9;
+    min-width: 0;
+    padding: 30px;
 }
 
 .skill-card h3 {
-    color: #f8fafc;
-
-    font-size: 1.05rem;
-
-    margin-bottom: 15px;
+    color: var(--heading);
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-bottom: 20px;
 }
 
 .skill-card li {
     position: relative;
 
-    color: #94a3b8;
+    color: var(--muted);
+    font-size: 0.96rem;
 
-    margin-bottom: 8px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
 
-    padding-left: 15px;
+.skill-card li:last-child {
+    margin-bottom: 0;
 }
 
 .skill-card li::before {
-    content: "•";
+    content: "✓";
 
     position: absolute;
-
     left: 0;
 
-    color: #67e8f9;
+    color: var(--accent);
+    font-weight: 800;
 }
 
-
-/* =========================
-   PROJECTS
-========================= */
+/* =========================================
+   11. PROJECTS
+========================================= */
 
 .projects-container {
     display: grid;
-
-    grid-template-columns:
-        repeat(3, 1fr);
-
-    gap: 25px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
 }
 
 .project-card {
     display: flex;
-
     flex-direction: column;
+    min-width: 0;
 
-    background: #111c31;
-
-    border: 1px solid #334155;
-
-    border-radius: 8px;
-
-    padding: 30px;
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        background 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-7px);
-
-    border-color: #67e8f9;
-
-    background: #172033;
+    padding: 34px;
 }
 
 .project-number {
-    color: #67e8f9;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    font-size: 0.9rem;
-    font-weight: 700;
+    width: 48px;
+    height: 48px;
 
-    letter-spacing: 1px;
+    margin-bottom: 26px;
 
-    margin-bottom: 18px;
+    color: var(--accent);
+    background: var(--accent-soft);
+
+    border: 1px solid rgba(103, 232, 249, 0.25);
+    border-radius: 13px;
+
+    font-size: 0.95rem;
+    font-weight: 800;
 }
 
 .project-card h3 {
-    color: #f8fafc;
-
+    color: var(--heading);
     font-size: 1.35rem;
+    line-height: 1.4;
+    letter-spacing: -0.4px;
 
     margin-bottom: 18px;
 }
 
 .project-card p {
-    color: #94a3b8;
-
+    color: var(--muted);
     font-size: 0.95rem;
+    line-height: 1.85;
 
     margin-bottom: 15px;
 }
 
+/* =========================================
+   12. TECHNOLOGY BADGES
+========================================= */
 
-/* =========================
-   TECHNOLOGY BADGES
-========================= */
+.technology-list,
+.certification-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
 
 .technology-list {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 8px;
-
-    margin-top: 10px;
+    margin-top: 12px;
 }
 
-.technology-list span {
-    padding: 6px 10px;
+.technology-list span,
+.certification-details span {
+    display: inline-block;
 
-    background: #0f172a;
+    padding: 6px 12px;
 
-    border: 1px solid #334155;
+    background: var(--bg);
+    color: var(--accent-light);
 
-    color: #67e8f9;
+    border: 1px solid var(--border);
+    border-radius: 100px;
 
-    font-size: 0.78rem;
-    font-weight: 600;
-
-    border-radius: 4px;
+    font-size: 0.76rem;
+    font-weight: 700;
+    line-height: 1.5;
 }
 
-
-/* =========================
-   PROJECT LINKS
-========================= */
+/* =========================================
+   13. PROJECT LINKS
+========================================= */
 
 .project-links {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 10px;
 
     margin-top: auto;
-
-    padding-top: 25px;
+    padding-top: 28px;
 }
 
 .project-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    padding: 8px 14px;
+    min-height: 42px;
+    padding: 9px 16px;
 
-    border: 1px solid #475569;
+    color: var(--accent);
+    border: 1px solid rgba(103, 232, 249, 0.45);
+    border-radius: 9px;
 
-    border-radius: 4px;
-
-    color: #cbd5e1;
-
-    font-size: 0.85rem;
+    font-size: 0.86rem;
+    font-weight: 700;
 
     transition:
-        color 0.3s ease,
-        border-color 0.3s ease,
-        background 0.3s ease;
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .project-link:hover {
-    color: #67e8f9;
-
-    border-color: #67e8f9;
-
-    background: #0f172a;
+    background: var(--accent);
+    color: var(--bg-deep);
+    border-color: var(--accent);
 }
 
-
-/* =========================
-   CERTIFICATIONS
-========================= */
+/* =========================================
+   14. CERTIFICATIONS
+========================================= */
 
 .certifications-container {
-    max-width: 850px;
+    max-width: 950px;
 }
 
 .certification-card {
     display: grid;
-
-    grid-template-columns:
-        130px 1fr;
-
-    gap: 30px;
-
+    grid-template-columns: 140px minmax(0, 1fr);
     align-items: center;
+    gap: 32px;
 
-    padding: 35px;
-
-    background: #111c31;
-
-    border: 1px solid #334155;
-
-    border-radius: 10px;
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease,
-        background 0.3s ease;
+    padding: 36px;
 }
-
-.certification-card:hover {
-    transform: translateY(-5px);
-
-    border-color: #67e8f9;
-
-    background: #172033;
-}
-
-
-/* =========================
-   CERTIFICATION BADGE
-========================= */
 
 .certification-badge {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
+
+    padding: 12px;
+
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border);
+    border-radius: 20px;
 }
 
 .certification-badge-image {
     width: 100%;
     height: 100%;
-
-    display: block;
-
     object-fit: contain;
 }
 
-
-/* =========================
-   CERTIFICATION CONTENT
-========================= */
-
 .certification-provider {
-    color: #67e8f9;
+    color: var(--accent);
 
-    font-size: 0.9rem;
-    font-weight: 700;
-
-    letter-spacing: 1px;
-
+    font-size: 0.8rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
 
-    margin-bottom: 7px;
+    margin-bottom: 8px;
 }
 
 .certification-content h3 {
-    color: #f8fafc;
-
-    font-size: 1.5rem;
-
-    line-height: 1.3;
+    color: var(--heading);
+    font-size: 1.45rem;
+    line-height: 1.4;
 
     margin-bottom: 15px;
 }
 
 .certification-description {
-    color: #94a3b8;
+    color: var(--muted);
+    line-height: 1.85;
 
     margin-bottom: 20px;
 }
 
-
-/* =========================
-   CERTIFICATION SKILLS
-========================= */
-
 .certification-details {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    gap: 8px;
-
-    margin-bottom: 25px;
+    margin-bottom: 26px;
 }
-
-.certification-details span {
-    padding: 6px 10px;
-
-    background: #0f172a;
-
-    border: 1px solid #334155;
-
-    border-radius: 4px;
-
-    color: #67e8f9;
-
-    font-size: 0.78rem;
-    font-weight: 600;
-}
-
-
-/* =========================
-   VIEW CREDENTIAL BUTTON
-========================= */
 
 .certification-link {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 
-    padding: 10px 16px;
+    min-height: 44px;
+    padding: 10px 18px;
 
-    border: 1px solid #67e8f9;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 9px;
 
-    border-radius: 5px;
-
-    color: #67e8f9;
-
-    font-size: 0.85rem;
-    font-weight: 600;
+    font-size: 0.86rem;
+    font-weight: 700;
 
     transition:
-        background 0.3s ease,
-        color 0.3s ease,
-        transform 0.3s ease;
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
 .certification-link:hover {
-    background: #67e8f9;
-
-    color: #0f172a;
-
+    background: var(--accent);
+    color: var(--bg-deep);
     transform: translateY(-2px);
 }
 
-
-/* =========================
-   EXPERIENCE
-========================= */
+/* =========================================
+   15. EXPERIENCE
+========================================= */
 
 .experience-container {
     display: grid;
-
-    gap: 20px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
 }
 
 .experience-card {
-    background: #111c31;
-
-    border: 1px solid #334155;
-
-    border-radius: 8px;
-
-    padding: 30px;
-
-    transition:
-        transform 0.3s ease,
-        border-color 0.3s ease;
-}
-
-.experience-card:hover {
-    transform: translateY(-4px);
-
-    border-color: #67e8f9;
+    min-width: 0;
+    padding: 34px;
 }
 
 .experience-year {
-    color: #94a3b8;
+    display: inline-block;
 
-    font-size: 0.85rem;
+    color: var(--accent);
+    background: var(--accent-soft);
 
-    margin-bottom: 10px;
+    border-radius: 7px;
+
+    padding: 5px 11px;
+    margin-bottom: 20px;
+
+    font-size: 0.82rem;
+    font-weight: 700;
 }
 
 .experience-card h3 {
-    color: #f8fafc;
-
+    color: var(--heading);
     font-size: 1.3rem;
+    line-height: 1.4;
 
-    margin-bottom: 5px;
+    margin-bottom: 7px;
 }
 
 .experience-company {
-    color: #67e8f9;
+    color: var(--accent);
+    font-weight: 700;
 
-    font-weight: 600;
-
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .experience-card p {
-    color: #94a3b8;
-
-    margin-bottom: 12px;
+    color: var(--muted);
+    line-height: 1.85;
+    margin-bottom: 14px;
 }
 
+.experience-card p:last-child {
+    margin-bottom: 0;
+}
 
-/* =========================
-   CONTACT
-========================= */
+/* =========================================
+   16. CONTACT
+========================================= */
 
 .contact-section {
     padding-bottom: 120px;
@@ -804,163 +795,279 @@ header {
 
 .contact-container {
     display: grid;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 55px;
+    align-items: start;
+}
 
-    grid-template-columns:
-        0.9fr 1.1fr;
-
-    gap: 50px;
+.contact-information {
+    min-width: 0;
+    padding-top: 20px;
 }
 
 .contact-information h3 {
-    color: #f8fafc;
-
-    font-size: 1.5rem;
-
-    margin-bottom: 15px;
+    color: var(--heading);
+    font-size: 1.65rem;
+    margin-bottom: 20px;
 }
 
 .contact-information p {
-    color: #94a3b8;
-
-    margin-bottom: 25px;
+    color: var(--muted);
+    line-height: 1.9;
+    margin-bottom: 30px;
 }
 
 .contact-link {
     display: block;
-
     width: fit-content;
+    max-width: 100%;
 
-    color: #cbd5e1;
+    color: var(--accent-light);
 
-    border-bottom: 1px solid #334155;
+    border-bottom: 1px solid var(--border);
 
-    padding-bottom: 5px;
+    padding-bottom: 7px;
+    margin-bottom: 18px;
 
-    margin-bottom: 15px;
+    overflow-wrap: anywhere;
 
     transition:
-        color 0.3s ease,
-        border-color 0.3s ease;
+        color 0.2s ease,
+        border-color 0.2s ease;
 }
 
 .contact-link:hover {
-    color: #67e8f9;
-
-    border-color: #67e8f9;
+    color: var(--accent);
+    border-color: var(--accent);
 }
 
-
-/* =========================
-   CONTACT FORM
-========================= */
+/* =========================================
+   17. CONTACT FORM
+========================================= */
 
 .contact-form {
-    background: #111c31;
-
-    border: 1px solid #334155;
-
-    border-radius: 8px;
-
-    padding: 30px;
+    min-width: 0;
+    padding: 36px;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .form-group label {
     display: block;
 
-    color: #cbd5e1;
-
+    color: var(--heading);
     font-size: 0.9rem;
+    font-weight: 700;
 
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
 .form-group input,
 .form-group textarea {
+    display: block;
     width: 100%;
+    min-width: 0;
 
-    padding: 12px 14px;
+    padding: 13px 15px;
 
-    background: #0f172a;
+    background: var(--bg);
+    color: var(--heading);
 
-    color: #e2e8f0;
-
-    border: 1px solid #334155;
-
-    border-radius: 5px;
-
-    font-family: inherit;
+    border: 1px solid #475569;
+    border-radius: 9px;
 
     font-size: 0.95rem;
 
-    outline: none;
-
     transition:
-        border-color 0.3s ease,
-        box-shadow 0.3s ease;
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #94a3b8;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #67e8f9;
+    outline: none;
+    border-color: var(--accent);
 
-    box-shadow:
-        0 0 0 2px rgba(103, 232, 249, 0.08);
+    box-shadow: 0 0 0 3px rgba(103, 232, 249, 0.12);
 }
 
 .form-group textarea {
+    min-height: 150px;
     resize: vertical;
-
-    min-height: 140px;
 }
 
 .contact-form .btn {
-    border: none;
+    width: 100%;
 }
 
+.contact-form .btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
 
-/* =========================
-   FOOTER
-========================= */
+/* =========================================
+   18. FOOTER
+========================================= */
 
 footer {
-    border-top: 1px solid #334155;
+    padding: 36px 24px;
 
-    padding: 30px 20px;
+    color: var(--muted);
+    background: var(--bg-deep);
+
+    border-top: 1px solid var(--border);
 
     text-align: center;
-
-    color: #64748b;
-
     font-size: 0.85rem;
 }
 
 footer p {
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
+footer p:last-child {
+    margin-bottom: 0;
+}
 
-/* =========================
-   RESPONSIVE - TABLET
-========================= */
+/* =========================================
+   19. KEYBOARD ACCESSIBILITY
+========================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 4px;
+}
+
+/* =========================================
+   20. TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+    .navbar {
+        width: min(var(--container), calc(100% - 40px));
+        gap: 16px;
+    }
+
+    .nav-links {
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.8rem;
+    }
+
+    .hero {
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.5rem, 4.4vw, 3.5rem);
+    }
+
+    .hero-image-frame {
+        width: min(300px, 100%);
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contact-container {
+        gap: 35px;
+    }
+
+}
+
+/* =========================================
+   21. MOBILE NAVIGATION AND LAYOUT
+========================================= */
 
 @media (max-width: 900px) {
 
-    .hero {
-        grid-template-columns: 1fr;
+    .navbar {
+        position: relative;
+        min-height: 74px;
+    }
 
-        gap: 50px;
+    .menu-toggle {
+        display: block;
+        flex-shrink: 0;
+    }
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        max-height: calc(100vh - 74px);
+        overflow-y: auto;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        background: var(--bg);
+        border: 1px solid var(--border);
+        border-radius: 0 0 14px 14px;
+
+        box-shadow: var(--shadow);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+    }
+
+    .nav-links li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 15px 20px;
+
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        min-height: auto;
+
+        grid-template-columns: minmax(0, 1fr);
+        gap: 55px;
+
+        padding-top: 145px;
+        padding-bottom: 90px;
 
         text-align: center;
     }
 
     .hero-content {
-        max-width: 750px;
-
-        margin: auto;
+        max-width: 760px;
+        margin: 0 auto;
     }
 
     .hero-content::before {
@@ -978,267 +1085,181 @@ footer p {
     }
 
     .hero-image-frame {
-        width: min(320px, 70vw);
-    }
-
-    .skills-container {
-        grid-template-columns:
-            repeat(2, 1fr);
-    }
-
-    .projects-container {
-        grid-template-columns:
-            repeat(2, 1fr);
+        width: min(310px, 75vw);
     }
 
     .contact-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
+
+    .contact-information {
+        padding-top: 0;
+    }
+
+    .experience-container {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
 }
 
+/* =========================================
+   22. SMALL TABLETS AND PHONES
+========================================= */
 
-/* =========================
-   RESPONSIVE - MOBILE
-========================= */
+@media (max-width: 650px) {
 
-@media (max-width: 768px) {
-
-    .navbar {
-        position: relative;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .nav-links {
-        display: none;
-
-        position: absolute;
-
-        top: 100%;
-        left: 0;
-
-        width: 100%;
-
-        flex-direction: column;
-
-        gap: 0;
-
-        background: #0f172a;
-
-        border-top: 1px solid #334155;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links li {
-        border-bottom: 1px solid #1e293b;
-    }
-
-    .nav-links a {
-        display: block;
-
-        padding: 15px 20px;
-    }
-
-
-    /* HERO */
-
-    .hero {
-        min-height: auto;
-
-        padding-top: 130px;
-        padding-bottom: 80px;
-
-        grid-template-columns: 1fr;
-
-        gap: 45px;
-    }
-
-    .hero-content {
-        max-width: 100%;
-
-        order: 1;
-    }
-
-    .hero-image-container {
-        order: 2;
-    }
-
-    .hero-image-frame {
-        width: min(310px, 80vw);
-    }
-
-    .hero h1 {
-        font-size: 3rem;
-    }
-
-
-    /* SECTIONS */
-
+    .navbar,
+    .hero,
     .section {
-        padding: 80px 20px;
-    }
-
-    .section h2 {
-        font-size: 2rem;
-    }
-
-
-    /* SKILLS */
-
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-
-
-    /* PROJECTS */
-
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-
-    .project-card {
-        padding: 25px;
-    }
-
-
-    /* CERTIFICATION */
-
-    .certification-card {
-        grid-template-columns: 1fr;
-
-        gap: 22px;
-
-        padding: 28px;
-    }
-
-    .certification-badge {
-        width: 100px;
-        height: 100px;
-    }
-
-
-    /* CONTACT */
-
-    .contact-container {
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-    }
-}
-
-
-/* =========================
-   SMALL MOBILE
-========================= */
-
-@media (max-width: 480px) {
-
-    .navbar {
-        padding: 16px;
+        width: calc(100% - 36px);
     }
 
     .logo {
-        font-size: 1.1rem;
+        font-size: 1.12rem;
     }
 
-
-    /* HERO */
-
     .hero {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-top: 125px;
+        padding-bottom: 75px;
+        gap: 45px;
     }
 
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: clamp(2rem, 8vw, 3rem);
+        letter-spacing: -1px;
+    }
+
+    .hero-role {
+        font-size: 0.75rem;
+        line-height: 1.5;
     }
 
     .hero-description {
         font-size: 1rem;
     }
 
+    .hero-image-frame {
+        width: min(270px, 75vw);
+    }
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .section h2 {
+        margin-bottom: 32px;
+    }
+
+    .section-intro {
+        font-size: 0.98rem;
+    }
+
+    .about-content {
+        padding: 26px;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 18px;
+    }
+
+    .skill-card,
+    .project-card,
+    .experience-card {
+        padding: 26px;
+    }
+
+    .certification-card {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 25px;
+        padding: 26px;
+    }
+
+    .certification-badge {
+        width: 115px;
+        height: 115px;
+    }
+
+    .contact-form {
+        padding: 26px;
+    }
+
+    .contact-section {
+        padding-bottom: 85px;
+    }
+
+}
+
+/* =========================================
+   23. VERY SMALL PHONES
+========================================= */
+
+@media (max-width: 400px) {
+
+    .navbar,
+    .hero,
+    .section {
+        width: calc(100% - 28px);
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
     .hero-buttons {
         flex-direction: column;
-
         align-items: stretch;
     }
 
     .hero-buttons .btn {
-        text-align: center;
+        width: 100%;
     }
 
     .hero-image-frame {
-        width: min(270px, 82vw);
+        width: min(245px, 76vw);
     }
 
-
-    /* SECTIONS */
-
-    .section {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-    .section h2 {
-        font-size: 1.8rem;
-    }
-
-    .section-intro {
-        font-size: 0.95rem;
-    }
-
-
-    /* PROJECTS */
-
-    .project-card {
-        padding: 22px;
-    }
-
-    .technology-list {
-        gap: 6px;
-    }
-
-    .technology-list span {
-        font-size: 0.72rem;
-
-        padding: 5px 8px;
-    }
-
-
-    /* CERTIFICATION */
-
-    .certification-card {
-        padding: 22px;
-    }
-
-    .certification-badge {
-        width: 90px;
-        height: 90px;
-    }
-
-    .certification-content h3 {
-        font-size: 1.25rem;
-    }
-
-    .certification-details {
-        gap: 6px;
-    }
-
-    .certification-details span {
-        font-size: 0.72rem;
-
-        padding: 5px 8px;
-    }
-
-
-    /* CONTACT */
-
+    .about-content,
+    .skill-card,
+    .project-card,
+    .certification-card,
+    .experience-card,
     .contact-form {
         padding: 22px;
     }
+
+    .certification-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .technology-list span,
+    .certification-details span {
+        font-size: 0.72rem;
+        padding: 5px 9px;
+    }
+
+}
+
+/* =========================================
+   24. REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
 }
