@@ -3,12 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>John Ikwuobe | AI-Native Full-Stack Developer</title>
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-    <link rel="stylesheet" href="css/style.css">
+    <meta
+        name="description"
+        content="John Ikwuobe - AI-Native Full-Stack Developer, Software Engineer, and Mechanical Engineer."
+    >
+
+    <title>
+        John Ikwuobe | AI-Native Full-Stack Developer
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 </head>
+
 
 <body>
 
@@ -27,6 +42,7 @@
             <button
                 class="menu-toggle"
                 aria-label="Open navigation menu"
+                aria-expanded="false"
             >
                 ☰
             </button>
@@ -47,6 +63,10 @@
 
                 <li>
                     <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#certifications">Certifications</a>
                 </li>
 
                 <li>
@@ -124,15 +144,13 @@
             </div>
 
 
-            <!-- HERO PHOTO -->
-
             <div class="hero-image-container">
 
                 <div class="hero-image-frame">
 
                     <img
                         src="images/john-ikwuobe.png"
-                        alt="John Ikwuobe - AI-Native Full-Stack Developer"
+                        alt="John Ikwuobe"
                         class="hero-image"
                     >
 
@@ -151,35 +169,34 @@
 
             <h2>About Me</h2>
 
-            <p>
-                I am a Mechanical Engineer with over 15 years of
-                professional experience in engineering operations,
-                project coordination, equipment maintenance, and
-                technical problem-solving.
-            </p>
+            <div class="about-content">
 
-            <p>
-                I decided to move into software engineering because
-                of my strong interest in building software and solving
-                problems through technology. As artificial intelligence
-                continues to become an important part of modern
-                technology and everyday life, I am also developing my
-                skills in AI and learning how to integrate it into
-                practical software solutions.
-            </p>
+                <p>
+                    I am a Mechanical Engineer with over 15 years of
+                    professional experience in engineering operations,
+                    customer support, project coordination, and industrial
+                    operations.
+                </p>
 
-            <p>
-                Today, I am building my skills as an AI-Native
-                Full-Stack Developer and Software Engineer, using
-                technologies such as Python, Go, FastAPI, SQL, HTML,
-                CSS, Git, and AI tools.
-            </p>
+                <p>
+                    I am currently transitioning into software engineering,
+                    with a focus on AI-native full-stack development,
+                    backend engineering, and practical software solutions.
+                </p>
 
-            <p>
-                My goal is to combine the problem-solving mindset I
-                developed through engineering with software development
-                and AI to build useful solutions to real-world problems.
-            </p>
+                <p>
+                    My engineering background has strengthened my approach
+                    to problem-solving, systems thinking, troubleshooting,
+                    process improvement, and technical analysis.
+                </p>
+
+                <p>
+                    I am particularly interested in building software that
+                    solves real-world problems while combining software
+                    engineering with artificial intelligence.
+                </p>
+
+            </div>
 
         </section>
 
@@ -194,23 +211,82 @@
 
             <div class="skills-container">
 
-                <div>Python</div>
+                <article class="skill-card">
 
-                <div>Go</div>
+                    <h3>Programming</h3>
 
-                <div>FastAPI</div>
+                    <ul>
+                        <li>Python</li>
+                        <li>Go</li>
+                    </ul>
 
-                <div>HTML5</div>
+                </article>
 
-                <div>CSS3</div>
 
-                <div>SQL</div>
+                <article class="skill-card">
 
-                <div>Git</div>
+                    <h3>Web Development</h3>
 
-                <div>GitHub</div>
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>FastAPI</li>
+                    </ul>
 
-                <div>AI</div>
+                </article>
+
+
+                <article class="skill-card">
+
+                    <h3>Database &amp; Backend</h3>
+
+                    <ul>
+                        <li>SQL</li>
+                        <li>SQLAlchemy</li>
+                        <li>SQLite</li>
+                    </ul>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <h3>Development Tools</h3>
+
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Pytest</li>
+                    </ul>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <h3>AI-Native Development</h3>
+
+                    <ul>
+                        <li>AI-assisted development</li>
+                        <li>Prompt engineering</li>
+                        <li>AI-powered problem solving</li>
+                    </ul>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <h3>Engineering</h3>
+
+                    <ul>
+                        <li>Problem solving</li>
+                        <li>Systems thinking</li>
+                        <li>Technical analysis</li>
+                        <li>Process improvement</li>
+                    </ul>
+
+                </article>
 
             </div>
 
@@ -225,9 +301,18 @@
 
             <h2>Featured Projects</h2>
 
+            <p class="section-intro">
+                A selection of practical software projects I have built
+                while developing my skills in full-stack development,
+                backend engineering, and AI-native software development.
+            </p>
+
+
             <div class="projects-container">
 
-                <!-- Inventory Management System -->
+                <!-- =========================
+                     INVENTORY MANAGEMENT SYSTEM
+                ========================== -->
 
                 <article class="project-card">
 
@@ -240,29 +325,39 @@
                     </h3>
 
                     <p>
-                        A web-based inventory management system designed
-                        to manage products, stock levels, stock movements,
-                        categories, and low-stock alerts.
+                        A full-stack web application designed to help
+                        businesses manage products, inventory levels,
+                        stock movements, categories, and low-stock alerts.
                     </p>
 
-                    <p class="technologies">
-                        Python · FastAPI · SQLAlchemy · HTML · CSS
+                    <p>
+                        The system includes product creation and editing,
+                        inventory tracking, stock-in and stock-out
+                        operations, search functionality, validation,
+                        database integration, and automated testing.
                     </p>
+
+                    <div class="technology-list">
+
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>SQLAlchemy</span>
+                        <span>SQLite</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Pytest</span>
+
+                    </div>
 
                     <div class="project-links">
 
                         <a
-                            href="#"
+                            href="https://github.com/successjohnny/inventory-management-system"
                             class="project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            Live Demo
-                        </a>
-
-                        <a
-                            href="#"
-                            class="project-link"
-                        >
-                            GitHub
+                            View on GitHub
                         </a>
 
                     </div>
@@ -270,7 +365,9 @@
                 </article>
 
 
-                <!-- ASCII Art Web -->
+                <!-- =========================
+                     ASCII ART WEB
+                ========================== -->
 
                 <article class="project-card">
 
@@ -284,28 +381,35 @@
 
                     <p>
                         A web application built with Go that converts
-                        user-entered text into ASCII art and displays
-                        the generated result through a web interface.
+                        user-entered text into ASCII art and displays the
+                        generated result through a web interface.
                     </p>
 
-                    <p class="technologies">
-                        Go · HTML · CSS · HTTP
+                    <p>
+                        The project demonstrates HTTP handling, form
+                        processing, templates, input validation, and
+                        server-side application logic.
                     </p>
+
+                    <div class="technology-list">
+
+                        <span>Go</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>HTTP</span>
+                        <span>Templates</span>
+
+                    </div>
 
                     <div class="project-links">
 
                         <a
-                            href="#"
+                            href="https://github.com/successjohnny/ascii-art-web-main"
                             class="project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            Live Demo
-                        </a>
-
-                        <a
-                            href="#"
-                            class="project-link"
-                        >
-                            GitHub
+                            View on GitHub
                         </a>
 
                     </div>
@@ -313,7 +417,9 @@
                 </article>
 
 
-                <!-- Go Reloaded -->
+                <!-- =========================
+                     GO RELOADED
+                ========================== -->
 
                 <article class="project-card">
 
@@ -327,21 +433,117 @@
 
                     <p>
                         A command-line text-processing application built
-                        with Go, demonstrating string manipulation,
-                        transformations, and file processing.
+                        with Go that processes text files and applies
+                        different transformations to the content.
                     </p>
 
-                    <p class="technologies">
-                        Go · CLI · File Processing
+                    <p>
+                        The project demonstrates file processing, string
+                        manipulation, text transformation, command-line
+                        input, and structured Go programming.
                     </p>
+
+                    <div class="technology-list">
+
+                        <span>Go</span>
+                        <span>CLI</span>
+                        <span>File Processing</span>
+                        <span>String Manipulation</span>
+
+                    </div>
 
                     <div class="project-links">
 
                         <a
-                            href="#"
+                            href="https://github.com/successjohnny/go-reloaded"
                             class="project-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            GitHub
+                            View on GitHub
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CERTIFICATIONS
+        ========================== -->
+
+        <section id="certifications" class="section">
+
+            <h2>Certifications</h2>
+
+            <p class="section-intro">
+                Professional certifications supporting my development
+                in artificial intelligence, software engineering, and
+                modern technology.
+            </p>
+
+
+            <div class="certifications-container">
+
+                <article class="certification-card">
+
+                    <div class="certification-badge">
+
+                        <img
+                            src="images/ibm-ai-fundamentals.png"
+                            alt="IBM AI Fundamentals: Language and Vision in AI badge"
+                            class="certification-badge-image"
+                        >
+
+                    </div>
+
+
+                    <div class="certification-content">
+
+                        <p class="certification-provider">
+                            IBM
+                        </p>
+
+                        <h3>
+                            AI Fundamentals: Language and Vision in AI
+                        </h3>
+
+                        <p class="certification-description">
+                            IBM credential covering fundamental concepts
+                            in artificial intelligence, including language
+                            technologies, computer vision, and practical
+                            applications of AI.
+                        </p>
+
+
+                        <div class="certification-details">
+
+                            <span>
+                                Artificial Intelligence
+                            </span>
+
+                            <span>
+                                Language AI
+                            </span>
+
+                            <span>
+                                Computer Vision
+                            </span>
+
+                        </div>
+
+
+                        <a
+                            href="https://www.credly.com/badges/ce698c98-a89b-4345-a5e1-05280a8b3389/public_url"
+                            class="certification-link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            View Credential
                         </a>
 
                     </div>
@@ -361,114 +563,95 @@
 
             <h2>Experience</h2>
 
+
             <div class="experience-container">
 
-                <!-- Software Engineering -->
-
                 <article class="experience-card">
 
-                    <div class="experience-date">
-                        2026 – Present
-                    </div>
-
-                    <div class="experience-content">
-
-                        <h3>
-                            AI-Native Full-Stack Developer
-                        </h3>
-
-                        <p class="experience-company">
-                            Learn2Earn Otukpo Campus
-                        </p>
-
-                        <p>
-                            Currently developing practical software
-                            engineering skills through hands-on projects
-                            involving Python, Go, FastAPI, SQL, web
-                            development, Git, and artificial intelligence.
-                        </p>
-
-                        <p>
-                            Building real-world applications while
-                            developing software engineering, problem-solving,
-                            debugging, and systems-thinking skills.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Globacom -->
-
-                <article class="experience-card">
-
-                    <div class="experience-date">
+                    <div class="experience-year">
                         2017 – 2025
                     </div>
 
-                    <div class="experience-content">
+                    <h3>
+                        Business Development Executive
+                    </h3>
 
-                        <h3>
-                            Business Development Executive
-                        </h3>
+                    <p class="experience-company">
+                        Globacom Nigeria Limited
+                    </p>
 
-                        <p class="experience-company">
-                            Globacom Nigeria Limited
-                        </p>
+                    <p>
+                        Worked across business development, customer
+                        engagement, project coordination, stakeholder
+                        management, and operational activities.
+                    </p>
 
-                        <p>
-                            Worked in a professional environment involving
-                            customer support, stakeholder engagement,
-                            business operations, reporting, coordination,
-                            and relationship management.
-                        </p>
-
-                        <p>
-                            Developed strong communication, analytical,
-                            problem-solving, and organizational skills that
-                            continue to support my transition into software
-                            engineering.
-                        </p>
-
-                    </div>
+                    <p>
+                        Developed practical experience in understanding
+                        customer requirements, solving business problems,
+                        coordinating activities, and maintaining
+                        professional relationships.
+                    </p>
 
                 </article>
 
 
-                <!-- Engineering Background -->
+                <article class="experience-card">
+
+                    <div class="experience-year">
+                        2008 – Present
+                    </div>
+
+                    <h3>
+                        Mechanical Engineering
+                    </h3>
+
+                    <p class="experience-company">
+                        Engineering &amp; Industrial Operations
+                    </p>
+
+                    <p>
+                        Built extensive experience in engineering
+                        operations, equipment maintenance, technical
+                        reporting, troubleshooting, project coordination,
+                        and process improvement.
+                    </p>
+
+                    <p>
+                        This engineering background continues to influence
+                        my approach to software development through
+                        structured problem-solving and systems thinking.
+                    </p>
+
+                </article>
+
 
                 <article class="experience-card">
 
-                    <div class="experience-date">
-                        Earlier Career
+                    <div class="experience-year">
+                        2026 – Present
                     </div>
 
-                    <div class="experience-content">
+                    <h3>
+                        AI-Native Full-Stack Engineer
+                    </h3>
 
-                        <h3>
-                            Mechanical Engineering
-                        </h3>
+                    <p class="experience-company">
+                        Learn2Earn Otukpo Campus
+                    </p>
 
-                        <p class="experience-company">
-                            Engineering &amp; Industrial Operations
-                        </p>
+                    <p>
+                        Currently developing practical skills in Python,
+                        Go, web development, backend engineering,
+                        databases, software testing, Git, and
+                        AI-assisted development.
+                    </p>
 
-                        <p>
-                            Developed professional experience in
-                            engineering operations, equipment maintenance,
-                            technical reporting, project coordination,
-                            and industrial problem-solving.
-                        </p>
-
-                        <p>
-                            This engineering background provides the
-                            foundation for my structured approach to
-                            solving technical problems and building
-                            practical software solutions.
-                        </p>
-
-                    </div>
+                    <p>
+                        Building real-world projects to strengthen
+                        software engineering and full-stack development
+                        capabilities.
+                    </p>
 
                 </article>
 
@@ -481,20 +664,53 @@
              CONTACT
         ========================== -->
 
-        <section id="contact" class="section">
+        <section
+            id="contact"
+            class="section contact-section"
+        >
 
-            <h2>
-                Let's Build Something Useful
-            </h2>
+            <h2>Contact Me</h2>
 
-            <p class="contact-intro">
-                I'm interested in building practical software solutions
-                that combine engineering, software development, and AI.
+            <p class="section-intro">
+                Interested in discussing a project, collaboration,
+                software development, or technology? Feel free to
+                get in touch.
             </p>
+
 
             <div class="contact-container">
 
-                <!-- Contact Form -->
+                <div class="contact-information">
+
+                    <h3>
+                        Let's Connect
+                    </h3>
+
+                    <p>
+                        I am open to opportunities involving software
+                        development, full-stack engineering, backend
+                        development, AI-native applications, and
+                        technology projects.
+                    </p>
+
+                    <a
+                        href="mailto:successjohnny@gmail.com"
+                        class="contact-link"
+                    >
+                        successjohnny@gmail.com
+                    </a>
+
+                    <a
+                        href="https://github.com/successjohnny"
+                        class="contact-link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+
+                </div>
+
 
                 <form class="contact-form">
 
@@ -525,7 +741,7 @@
                             type="email"
                             id="email"
                             name="email"
-                            placeholder="your@email.com"
+                            placeholder="Your email"
                             required
                         >
 
@@ -542,7 +758,7 @@
                             id="message"
                             name="message"
                             rows="6"
-                            placeholder="Tell me about your project..."
+                            placeholder="Your message"
                             required
                         ></textarea>
 
@@ -558,41 +774,6 @@
 
                 </form>
 
-
-                <!-- Contact Links -->
-
-                <div class="contact-links">
-
-                    <h3>
-                        Connect With Me
-                    </h3>
-
-                    <p>
-                        You can reach me directly by email or explore
-                        my software projects on GitHub.
-                    </p>
-
-                    <a
-                        href="mailto:successjohnny@gmail.com"
-                        class="contact-link"
-                    >
-                        successjohnny@gmail.com
-                    </a>
-
-                    <br>
-                    <br>
-
-                    <a
-                        href="https://github.com/successjohnny"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="contact-link"
-                    >
-                        GitHub
-                    </a>
-
-                </div>
-
             </div>
 
         </section>
@@ -607,7 +788,12 @@
     <footer>
 
         <p>
-            &copy; 2026 John Ikwuobe. All rights reserved.
+            &copy; 2026 John Ikwuobe.
+            All rights reserved.
+        </p>
+
+        <p>
+            AI-Native Full-Stack Developer · Software Engineer
         </p>
 
     </footer>
