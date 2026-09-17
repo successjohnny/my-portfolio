@@ -310,9 +310,7 @@
 
             <div class="projects-container">
 
-                <!-- =========================
-                     INVENTORY MANAGEMENT SYSTEM
-                ========================== -->
+                <!-- INVENTORY MANAGEMENT SYSTEM -->
 
                 <article class="project-card">
 
@@ -365,9 +363,7 @@
                 </article>
 
 
-                <!-- =========================
-                     ASCII ART WEB
-                ========================== -->
+                <!-- ASCII ART WEB -->
 
                 <article class="project-card">
 
@@ -417,9 +413,7 @@
                 </article>
 
 
-                <!-- =========================
-                     GO RELOADED
-                ========================== -->
+                <!-- GO RELOADED -->
 
                 <article class="project-card">
 
@@ -712,7 +706,16 @@
                 </div>
 
 
-                <form class="contact-form">
+                <!-- =========================
+                     FORMSPREE CONTACT FORM
+                ========================== -->
+
+                <form
+                    class="contact-form"
+                    id="contact-form"
+                    action="https://formspree.io/f/xwlpkbzj"
+                    method="POST"
+                >
 
                     <div class="form-group">
 
@@ -725,6 +728,7 @@
                             id="name"
                             name="name"
                             placeholder="Your name"
+                            autocomplete="name"
                             required
                         >
 
@@ -742,6 +746,7 @@
                             id="email"
                             name="email"
                             placeholder="Your email"
+                            autocomplete="email"
                             required
                         >
 
@@ -768,6 +773,7 @@
                     <button
                         type="submit"
                         class="btn primary-btn"
+                        id="submit-button"
                     >
                         Send Message
                     </button>
