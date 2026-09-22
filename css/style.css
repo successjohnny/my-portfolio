@@ -1938,3 +1938,16 @@ textarea:focus-visible {
     font-weight: 700;
     line-height: 1.5 !important;
 }
+
+/* Professional membership card */
+.certifications-container {
+    display: grid;
+    gap: 24px;
+}
+
+.membership-monogram {
+    color: var(--accent);
+    font-size: 1.7rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+}
