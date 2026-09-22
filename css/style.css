@@ -6,67 +6,49 @@
 
 \========================================= */
 
-
-
 /* =========================================
 
    1. DESIGN SYSTEM
 
 \========================================= */
 
-
-
 :root {
 
-    --bg: #0f172a;
+    \--bg: #0f172a;
 
-    --bg-deep: #0b1220;
+    \--bg-deep: #0b1220;
 
-    --surface: #152238;
+    \--surface: #152238;
 
-    --surface-hover: #1b2c46;
+    \--surface-hover: #1b2c46;
 
+    \--accent: #67e8f9;
 
+    \--accent-light: #a5f3fc;
 
-    --accent: #67e8f9;
+    \--accent-soft: rgba(103, 232, 249, 0.10);
 
-    --accent-light: #a5f3fc;
+    \--heading: #f8fafc;
 
-    --accent-soft: rgba(103, 232, 249, 0.10);
+    \--text: #cbd5e1;
 
+    \--muted: #a8b7cc;
 
+    \--border: #334155;
 
-    --heading: #f8fafc;
+    \--radius: 18px;
 
-    --text: #cbd5e1;
+    \--container: 1180px;
 
-    --muted: #a8b7cc;
-
-
-
-    --border: #334155;
-
-
-
-    --radius: 18px;
-
-    --container: 1180px;
-
-
-
-    --shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+    \--shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
 
 }
-
-
 
 /* =========================================
 
    2. RESET AND GENERAL STYLES
 
 \========================================= */
-
-
 
 *,
 
@@ -82,8 +64,6 @@
 
 }
 
-
-
 html {
 
     scroll-behavior: smooth;
@@ -91,8 +71,6 @@ html {
     scroll-padding-top: 100px;
 
 }
-
-
 
 body {
 
@@ -108,8 +86,6 @@ body {
 
 }
 
-
-
 a {
 
     color: inherit;
@@ -118,15 +94,11 @@ a {
 
 }
 
-
-
 ul {
 
     list-style: none;
 
 }
-
-
 
 img {
 
@@ -135,8 +107,6 @@ img {
     max-width: 100%;
 
 }
-
-
 
 button,
 
@@ -148,15 +118,11 @@ textarea {
 
 }
 
-
-
 button {
 
     cursor: pointer;
 
 }
-
-
 
 ::selection {
 
@@ -166,15 +132,11 @@ button {
 
 }
 
-
-
 /* =========================================
 
    3. NAVIGATION
 
 \========================================= */
-
-
 
 header {
 
@@ -188,21 +150,15 @@ header {
 
     z-index: 1000;
 
-
-
     background: rgba(15, 23, 42, 0.96);
 
     border-bottom: 1px solid rgba(103, 232, 249, 0.12);
-
-
 
     backdrop-filter: blur(16px);
 
     -webkit-backdrop-filter: blur(16px);
 
 }
-
-
 
 .navbar {
 
@@ -211,8 +167,6 @@ header {
     min-height: 82px;
 
     margin: 0 auto;
-
-
 
     display: flex;
 
@@ -223,8 +177,6 @@ header {
     gap: 24px;
 
 }
-
-
 
 .logo {
 
@@ -240,15 +192,11 @@ header {
 
 }
 
-
-
 .logo:hover {
 
     color: var(--accent);
 
 }
-
-
 
 .nav-links {
 
@@ -264,15 +212,11 @@ header {
 
 }
 
-
-
 .nav-links a {
 
     display: inline-block;
 
     padding: 8px 0;
-
-
 
     color: var(--text);
 
@@ -280,13 +224,9 @@ header {
 
     font-weight: 600;
 
-
-
     transition: color 0.2s ease;
 
 }
-
-
 
 .nav-links a:hover {
 
@@ -294,25 +234,17 @@ header {
 
 }
 
-
-
 .menu-toggle {
 
     display: none;
-
-
 
     color: var(--heading);
 
     background: transparent;
 
-
-
     border: 1px solid var(--border);
 
     border-radius: 10px;
-
-
 
     padding: 4px 12px;
 
@@ -322,15 +254,11 @@ header {
 
 }
 
-
-
 /* =========================================
 
    4. HERO SECTION
 
 \========================================= */
-
-
 
 .hero {
 
@@ -342,11 +270,7 @@ header {
 
     margin: 0 auto;
 
-
-
     padding: 150px 0 100px;
-
-
 
     display: grid;
 
@@ -358,8 +282,6 @@ header {
 
 }
 
-
-
 .hero-content {
 
     min-width: 0;
@@ -368,33 +290,23 @@ header {
 
 }
 
-
-
 .hero-content::before {
 
     content: "";
 
     display: block;
 
-
-
     width: 65px;
 
     height: 5px;
 
-
-
     margin-bottom: 30px;
-
-
 
     background: var(--accent);
 
     border-radius: 20px;
 
 }
-
-
 
 .hero-intro {
 
@@ -410,31 +322,21 @@ header {
 
 }
 
-
-
 .hero-role {
 
     display: inline-block;
-
-
 
     color: var(--accent-light);
 
     background: var(--accent-soft);
 
-
-
     border: 1px solid rgba(103, 232, 249, 0.25);
 
     border-radius: 100px;
 
-
-
     padding: 7px 15px;
 
     margin-bottom: 24px;
-
-
 
     font-size: 0.82rem;
 
@@ -444,13 +346,9 @@ header {
 
 }
 
-
-
 .hero h1 {
 
     max-width: 760px;
-
-
 
     color: var(--heading);
 
@@ -462,19 +360,13 @@ header {
 
     letter-spacing: -2px;
 
-
-
     margin-bottom: 28px;
 
 }
 
-
-
 .hero-description {
 
     max-width: 620px;
-
-
 
     color: var(--muted);
 
@@ -482,21 +374,15 @@ header {
 
     line-height: 1.9;
 
-
-
     margin-bottom: 36px;
 
 }
-
-
 
 /* =========================================
 
    5. BUTTONS
 
 \========================================= */
-
-
 
 .hero-buttons {
 
@@ -508,8 +394,6 @@ header {
 
 }
 
-
-
 .btn {
 
     display: inline-flex;
@@ -518,27 +402,19 @@ header {
 
     justify-content: center;
 
-
-
     min-height: 48px;
 
     padding: 12px 22px;
 
-
-
     border: 1px solid transparent;
 
     border-radius: 10px;
-
-
 
     font-size: 0.9rem;
 
     font-weight: 700;
 
     text-align: center;
-
-
 
     transition:
 
@@ -554,15 +430,11 @@ header {
 
 }
 
-
-
 .btn:hover {
 
     transform: translateY(-3px);
 
 }
-
-
 
 .primary-btn {
 
@@ -572,13 +444,9 @@ header {
 
     border-color: var(--accent);
 
-
-
     box-shadow: 0 10px 28px rgba(103, 232, 249, 0.14);
 
 }
-
-
 
 .primary-btn:hover {
 
@@ -586,13 +454,9 @@ header {
 
     border-color: var(--accent-light);
 
-
-
     box-shadow: 0 14px 32px rgba(103, 232, 249, 0.22);
 
 }
-
-
 
 .secondary-btn {
 
@@ -604,8 +468,6 @@ header {
 
 }
 
-
-
 .secondary-btn:hover {
 
     color: var(--accent);
@@ -616,21 +478,15 @@ header {
 
 }
 
-
-
 /* =========================================
 
    6. HERO PROFILE IMAGE
 
 \========================================= */
 
-
-
 .hero-image-container {
 
     min-width: 0;
-
-
 
     display: flex;
 
@@ -640,27 +496,17 @@ header {
 
 }
 
-
-
 .hero-image-frame {
 
     position: relative;
-
-
 
     width: min(340px, 100%);
 
     aspect-ratio: 1 / 1;
 
-
-
     padding: 9px;
 
-
-
     border-radius: 50%;
-
-
 
     background: linear-gradient(
 
@@ -674,8 +520,6 @@ header {
 
     );
 
-
-
     box-shadow:
 
         0 0 0 15px rgba(103, 232, 249, 0.04),
@@ -686,21 +530,15 @@ header {
 
 }
 
-
-
 .hero-image {
 
     width: 100%;
 
     height: 100%;
 
-
-
     object-fit: cover;
 
     object-position: center top;
-
-
 
     border: 6px solid var(--bg);
 
@@ -708,15 +546,11 @@ header {
 
 }
 
-
-
 /* =========================================
 
    7. SHARED SECTIONS
 
 \========================================= */
-
-
 
 .section {
 
@@ -728,13 +562,9 @@ header {
 
 }
 
-
-
 .section h2 {
 
     color: var(--heading);
-
-
 
     font-size: clamp(1.9rem, 3vw, 2.55rem);
 
@@ -744,13 +574,9 @@ header {
 
     letter-spacing: -1px;
 
-
-
     margin-bottom: 30px;
 
 }
-
-
 
 .section h2::after {
 
@@ -758,17 +584,11 @@ header {
 
     display: block;
 
-
-
     width: 58px;
 
     height: 4px;
 
-
-
     margin-top: 15px;
-
-
 
     background: var(--accent);
 
@@ -776,13 +596,9 @@ header {
 
 }
 
-
-
 .section-intro {
 
     max-width: 780px;
-
-
 
     color: var(--muted);
 
@@ -790,13 +606,9 @@ header {
 
     line-height: 1.85;
 
-
-
     margin: -8px 0 30px;
 
 }
-
-
 
 /* =========================================
 
@@ -804,17 +616,11 @@ header {
 
 \========================================= */
 
-
-
 .about-content {
 
     max-width: 940px;
 
-
-
     padding: 36px 40px;
-
-
 
     background: var(--surface);
 
@@ -824,13 +630,9 @@ header {
 
     border-radius: 0 var(--radius) var(--radius) 0;
 
-
-
     box-shadow: var(--shadow);
 
 }
-
-
 
 .about-content p {
 
@@ -844,23 +646,17 @@ header {
 
 }
 
-
-
 .about-content p:last-child {
 
     margin-bottom: 0;
 
 }
 
-
-
 /* =========================================
 
    9. SHARED CARD DESIGN
 
 \========================================= */
-
-
 
 .skill-card,
 
@@ -874,19 +670,13 @@ header {
 
     background: var(--surface);
 
-
-
     border: 1px solid var(--border);
 
     border-radius: var(--radius);
 
-
-
     box-shadow: var(--shadow);
 
 }
-
-
 
 .skill-card,
 
@@ -906,8 +696,6 @@ header {
 
 }
 
-
-
 .skill-card:hover,
 
 .project-card:hover,
@@ -924,15 +712,11 @@ header {
 
 }
 
-
-
 /* =========================================
 
    10. SKILLS
 
 \========================================= */
-
-
 
 .skills-container {
 
@@ -944,8 +728,6 @@ header {
 
 }
 
-
-
 .skill-card {
 
     min-width: 0;
@@ -953,8 +735,6 @@ header {
     padding: 30px;
 
 }
-
-
 
 .skill-card h3 {
 
@@ -968,19 +748,13 @@ header {
 
 }
 
-
-
 .skill-card li {
 
     position: relative;
 
-
-
     color: var(--muted);
 
     font-size: 0.96rem;
-
-
 
     padding-left: 20px;
 
@@ -988,27 +762,19 @@ header {
 
 }
 
-
-
 .skill-card li:last-child {
 
     margin-bottom: 0;
 
 }
 
-
-
 .skill-card li::before {
 
     content: "✓";
 
-
-
     position: absolute;
 
     left: 0;
-
-
 
     color: var(--accent);
 
@@ -1016,15 +782,11 @@ header {
 
 }
 
-
-
 /* =========================================
 
    11. PROJECTS
 
 \========================================= */
-
-
 
 .projects-container {
 
@@ -1036,8 +798,6 @@ header {
 
 }
 
-
-
 .project-card {
 
     display: flex;
@@ -1046,13 +806,9 @@ header {
 
     min-width: 0;
 
-
-
     padding: 34px;
 
 }
-
-
 
 .project-number {
 
@@ -1062,37 +818,25 @@ header {
 
     justify-content: center;
 
-
-
     width: 48px;
 
     height: 48px;
 
-
-
     margin-bottom: 26px;
-
-
 
     color: var(--accent);
 
     background: var(--accent-soft);
 
-
-
     border: 1px solid rgba(103, 232, 249, 0.25);
 
     border-radius: 13px;
-
-
 
     font-size: 0.95rem;
 
     font-weight: 800;
 
 }
-
-
 
 .project-card h3 {
 
@@ -1104,13 +848,9 @@ header {
 
     letter-spacing: -0.4px;
 
-
-
     margin-bottom: 18px;
 
 }
-
-
 
 .project-card p {
 
@@ -1120,21 +860,15 @@ header {
 
     line-height: 1.85;
 
-
-
     margin-bottom: 15px;
 
 }
-
-
 
 /* =========================================
 
    12. TECHNOLOGY BADGES
 
 \========================================= */
-
-
 
 .technology-list,
 
@@ -1148,15 +882,11 @@ header {
 
 }
 
-
-
 .technology-list {
 
     margin-top: 12px;
 
 }
-
-
 
 .technology-list span,
 
@@ -1164,23 +894,15 @@ header {
 
     display: inline-block;
 
-
-
     padding: 6px 12px;
-
-
 
     background: var(--bg);
 
     color: var(--accent-light);
 
-
-
     border: 1px solid var(--border);
 
     border-radius: 100px;
-
-
 
     font-size: 0.76rem;
 
@@ -1190,15 +912,11 @@ header {
 
 }
 
-
-
 /* =========================================
 
    13. PROJECT LINKS
 
 \========================================= */
-
-
 
 .project-links {
 
@@ -1208,15 +926,11 @@ header {
 
     gap: 10px;
 
-
-
     margin-top: auto;
 
     padding-top: 28px;
 
 }
-
-
 
 .project-link {
 
@@ -1226,13 +940,9 @@ header {
 
     justify-content: center;
 
-
-
     min-height: 42px;
 
     padding: 9px 16px;
-
-
 
     color: var(--accent);
 
@@ -1240,13 +950,9 @@ header {
 
     border-radius: 9px;
 
-
-
     font-size: 0.86rem;
 
     font-weight: 700;
-
-
 
     transition:
 
@@ -1258,8 +964,6 @@ header {
 
 }
 
-
-
 .project-link:hover {
 
     background: var(--accent);
@@ -1270,23 +974,17 @@ header {
 
 }
 
-
-
 /* =========================================
 
    14. CERTIFICATIONS
 
 \========================================= */
 
-
-
 .certifications-container {
 
     max-width: 950px;
 
 }
-
-
 
 .certification-card {
 
@@ -1298,13 +996,9 @@ header {
 
     gap: 32px;
 
-
-
     padding: 36px;
 
 }
-
-
 
 .certification-badge {
 
@@ -1312,19 +1006,13 @@ header {
 
     height: 130px;
 
-
-
     display: flex;
 
     align-items: center;
 
     justify-content: center;
 
-
-
     padding: 12px;
-
-
 
     background: rgba(255, 255, 255, 0.04);
 
@@ -1333,8 +1021,6 @@ header {
     border-radius: 20px;
 
 }
-
-
 
 .certification-badge-image {
 
@@ -1346,13 +1032,9 @@ header {
 
 }
 
-
-
 .certification-provider {
 
     color: var(--accent);
-
-
 
     font-size: 0.8rem;
 
@@ -1362,13 +1044,9 @@ header {
 
     text-transform: uppercase;
 
-
-
     margin-bottom: 8px;
 
 }
-
-
 
 .certification-content h3 {
 
@@ -1378,13 +1056,9 @@ header {
 
     line-height: 1.4;
 
-
-
     margin-bottom: 15px;
 
 }
-
-
 
 .certification-description {
 
@@ -1392,21 +1066,15 @@ header {
 
     line-height: 1.85;
 
-
-
     margin-bottom: 20px;
 
 }
-
-
 
 .certification-details {
 
     margin-bottom: 26px;
 
 }
-
-
 
 .certification-link {
 
@@ -1416,13 +1084,9 @@ header {
 
     justify-content: center;
 
-
-
     min-height: 44px;
 
     padding: 10px 18px;
-
-
 
     color: var(--accent);
 
@@ -1430,13 +1094,9 @@ header {
 
     border-radius: 9px;
 
-
-
     font-size: 0.86rem;
 
     font-weight: 700;
-
-
 
     transition:
 
@@ -1448,8 +1108,6 @@ header {
 
 }
 
-
-
 .certification-link:hover {
 
     background: var(--accent);
@@ -1460,15 +1118,11 @@ header {
 
 }
 
-
-
 /* =========================================
 
    15. EXPERIENCE
 
 \========================================= */
-
-
 
 .experience-container {
 
@@ -1480,8 +1134,6 @@ header {
 
 }
 
-
-
 .experience-card {
 
     min-width: 0;
@@ -1490,37 +1142,25 @@ header {
 
 }
 
-
-
 .experience-year {
 
     display: inline-block;
-
-
 
     color: var(--accent);
 
     background: var(--accent-soft);
 
-
-
     border-radius: 7px;
-
-
 
     padding: 5px 11px;
 
     margin-bottom: 20px;
-
-
 
     font-size: 0.82rem;
 
     font-weight: 700;
 
 }
-
-
 
 .experience-card h3 {
 
@@ -1530,13 +1170,9 @@ header {
 
     line-height: 1.4;
 
-
-
     margin-bottom: 7px;
 
 }
-
-
 
 .experience-company {
 
@@ -1544,13 +1180,9 @@ header {
 
     font-weight: 700;
 
-
-
     margin-bottom: 20px;
 
 }
-
-
 
 .experience-card p {
 
@@ -1562,15 +1194,11 @@ header {
 
 }
 
-
-
 .experience-card p:last-child {
 
     margin-bottom: 0;
 
 }
-
-
 
 /* =========================================
 
@@ -1578,15 +1206,11 @@ header {
 
 \========================================= */
 
-
-
 .contact-section {
 
     padding-bottom: 80px;
 
 }
-
-
 
 .contact-container {
 
@@ -1600,8 +1224,6 @@ header {
 
 }
 
-
-
 .contact-information {
 
     min-width: 0;
@@ -1609,8 +1231,6 @@ header {
     padding-top: 20px;
 
 }
-
-
 
 .contact-information h3 {
 
@@ -1622,8 +1242,6 @@ header {
 
 }
 
-
-
 .contact-information p {
 
     color: var(--muted);
@@ -1634,8 +1252,6 @@ header {
 
 }
 
-
-
 .contact-link {
 
     display: block;
@@ -1644,25 +1260,15 @@ header {
 
     max-width: 100%;
 
-
-
     color: var(--accent-light);
 
-
-
     border-bottom: 1px solid var(--border);
-
-
 
     padding-bottom: 7px;
 
     margin-bottom: 18px;
 
-
-
     overflow-wrap: anywhere;
-
-
 
     transition:
 
@@ -1672,8 +1278,6 @@ header {
 
 }
 
-
-
 .contact-link:hover {
 
     color: var(--accent);
@@ -1682,15 +1286,11 @@ header {
 
 }
 
-
-
 /* =========================================
 
    17. CONTACT FORM
 
 \========================================= */
-
-
 
 .contact-form {
 
@@ -1700,21 +1300,15 @@ header {
 
 }
 
-
-
 .form-group {
 
     margin-bottom: 22px;
 
 }
 
-
-
 .form-group label {
 
     display: block;
-
-
 
     color: var(--heading);
 
@@ -1722,13 +1316,9 @@ header {
 
     font-weight: 700;
 
-
-
     margin-bottom: 9px;
 
 }
-
-
 
 .form-group input,
 
@@ -1740,27 +1330,17 @@ header {
 
     min-width: 0;
 
-
-
     padding: 13px 15px;
-
-
 
     background: var(--bg);
 
     color: var(--heading);
 
-
-
     border: 1px solid #475569;
 
     border-radius: 9px;
 
-
-
     font-size: 0.95rem;
-
-
 
     transition:
 
@@ -1770,8 +1350,6 @@ header {
 
 }
 
-
-
 .form-group input::placeholder,
 
 .form-group textarea::placeholder {
@@ -1779,8 +1357,6 @@ header {
     color: #94a3b8;
 
 }
-
-
 
 .form-group input:focus,
 
@@ -1790,13 +1366,9 @@ header {
 
     border-color: var(--accent);
 
-
-
     box-shadow: 0 0 0 3px rgba(103, 232, 249, 0.12);
 
 }
-
-
 
 .form-group textarea {
 
@@ -1806,15 +1378,11 @@ header {
 
 }
 
-
-
 .contact-form .btn {
 
     width: 100%;
 
 }
-
-
 
 .contact-form .btn:disabled {
 
@@ -1826,31 +1394,21 @@ header {
 
 }
 
-
-
 /* =========================================
 
    18. FOOTER
 
 \========================================= */
 
-
-
 footer {
 
     padding: 36px 24px;
-
-
 
     color: var(--muted);
 
     background: var(--bg-deep);
 
-
-
     border-top: 1px solid var(--border);
-
-
 
     text-align: center;
 
@@ -1858,15 +1416,11 @@ footer {
 
 }
 
-
-
 footer p {
 
     margin-bottom: 6px;
 
 }
-
-
 
 footer p:last-child {
 
@@ -1874,15 +1428,11 @@ footer p:last-child {
 
 }
 
-
-
 /* =========================================
 
    19. KEYBOARD ACCESSIBILITY
 
 \========================================= */
-
-
 
 a:focus-visible,
 
@@ -1898,19 +1448,13 @@ textarea:focus-visible {
 
 }
 
-
-
 /* =========================================
 
    20. TABLET
 
 \========================================= */
 
-
-
 @media (max-width: 1050px) {
-
-
 
     .navbar {
 
@@ -1920,23 +1464,17 @@ textarea:focus-visible {
 
     }
 
-
-
     .nav-links {
 
         gap: 8px 12px;
 
     }
 
-
-
     .nav-links a {
 
         font-size: 0.8rem;
 
     }
-
-
 
     .hero {
 
@@ -1946,15 +1484,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .hero h1 {
 
         font-size: clamp(2.5rem, 4.4vw, 3.5rem);
 
     }
-
-
 
     .hero-image-frame {
 
@@ -1962,15 +1496,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .projects-container {
 
         grid-template-columns: repeat(2, minmax(0, 1fr));
 
     }
-
-
 
     .skills-container {
 
@@ -1978,19 +1508,13 @@ textarea:focus-visible {
 
     }
 
-
-
     .contact-container {
 
         gap: 35px;
 
     }
 
-
-
 }
-
-
 
 /* =========================================
 
@@ -1998,11 +1522,7 @@ textarea:focus-visible {
 
 \========================================= */
 
-
-
 @media (max-width: 900px) {
-
-
 
     .navbar {
 
@@ -2012,8 +1532,6 @@ textarea:focus-visible {
 
     }
 
-
-
     .menu-toggle {
 
         display: block;
@@ -2022,13 +1540,9 @@ textarea:focus-visible {
 
     }
 
-
-
     .nav-links {
 
         display: none;
-
-
 
         position: absolute;
 
@@ -2038,15 +1552,11 @@ textarea:focus-visible {
 
         right: 0;
 
-
-
         width: 100%;
 
         max-height: calc(100vh - 74px);
 
         overflow-y: auto;
-
-
 
         flex-direction: column;
 
@@ -2054,21 +1564,15 @@ textarea:focus-visible {
 
         gap: 0;
 
-
-
         background: var(--bg);
 
         border: 1px solid var(--border);
 
         border-radius: 0 0 14px 14px;
 
-
-
         box-shadow: var(--shadow);
 
     }
-
-
 
     .nav-links.active {
 
@@ -2076,15 +1580,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .nav-links li {
 
         border-bottom: 1px solid rgba(148, 163, 184, 0.12);
 
     }
-
-
 
     .nav-links li:last-child {
 
@@ -2092,45 +1592,31 @@ textarea:focus-visible {
 
     }
 
-
-
     .nav-links a {
 
         display: block;
 
         padding: 15px 20px;
 
-
-
         font-size: 0.95rem;
 
     }
-
-
 
     .hero {
 
         min-height: auto;
 
-
-
         grid-template-columns: minmax(0, 1fr);
 
         gap: 55px;
-
-
 
         padding-top: 145px;
 
         padding-bottom: 90px;
 
-
-
         text-align: center;
 
     }
-
-
 
     .hero-content {
 
@@ -2140,8 +1626,6 @@ textarea:focus-visible {
 
     }
 
-
-
     .hero-content::before {
 
         margin-left: auto;
@@ -2149,8 +1633,6 @@ textarea:focus-visible {
         margin-right: auto;
 
     }
-
-
 
     .hero-description {
 
@@ -2160,15 +1642,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .hero-buttons {
 
         justify-content: center;
 
     }
-
-
 
     .hero-image-frame {
 
@@ -2176,15 +1654,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .contact-container {
 
         grid-template-columns: minmax(0, 1fr);
 
     }
-
-
 
     .contact-information {
 
@@ -2192,19 +1666,13 @@ textarea:focus-visible {
 
     }
 
-
-
     .experience-container {
 
         grid-template-columns: minmax(0, 1fr);
 
     }
 
-
-
 }
-
-
 
 /* =========================================
 
@@ -2212,11 +1680,7 @@ textarea:focus-visible {
 
 \========================================= */
 
-
-
 @media (max-width: 650px) {
-
-
 
     .navbar,
 
@@ -2228,15 +1692,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .logo {
 
         font-size: 1.12rem;
 
     }
-
-
 
     .hero {
 
@@ -2248,8 +1708,6 @@ textarea:focus-visible {
 
     }
 
-
-
     .hero h1 {
 
         font-size: clamp(2rem, 8vw, 3rem);
@@ -2257,8 +1715,6 @@ textarea:focus-visible {
         letter-spacing: -1px;
 
     }
-
-
 
     .hero-role {
 
@@ -2268,15 +1724,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .hero-description {
 
         font-size: 1rem;
 
     }
-
-
 
     .hero-image-frame {
 
@@ -2284,15 +1736,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .section {
 
         padding: 45px 0;
 
     }
-
-
 
     .section h2 {
 
@@ -2300,23 +1748,17 @@ textarea:focus-visible {
 
     }
 
-
-
     .section-intro {
 
         font-size: 0.98rem;
 
     }
 
-
-
     .about-content {
 
         padding: 26px;
 
     }
-
-
 
     .skills-container,
 
@@ -2328,8 +1770,6 @@ textarea:focus-visible {
 
     }
 
-
-
     .skill-card,
 
     .project-card,
@@ -2339,8 +1779,6 @@ textarea:focus-visible {
         padding: 26px;
 
     }
-
-
 
     .certification-card {
 
@@ -2352,8 +1790,6 @@ textarea:focus-visible {
 
     }
 
-
-
     .certification-badge {
 
         width: 115px;
@@ -2362,15 +1798,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .contact-form {
 
         padding: 26px;
 
     }
-
-
 
     .contact-section {
 
@@ -2378,11 +1810,7 @@ textarea:focus-visible {
 
     }
 
-
-
 }
-
-
 
 /* =========================================
 
@@ -2390,11 +1818,7 @@ textarea:focus-visible {
 
 \========================================= */
 
-
-
 @media (max-width: 400px) {
-
-
 
     .navbar,
 
@@ -2406,23 +1830,17 @@ textarea:focus-visible {
 
     }
 
-
-
     .logo {
 
         font-size: 1rem;
 
     }
 
-
-
     .hero h1 {
 
         font-size: 2rem;
 
     }
-
-
 
     .hero-buttons {
 
@@ -2432,23 +1850,17 @@ textarea:focus-visible {
 
     }
 
-
-
     .hero-buttons .btn {
 
         width: 100%;
 
     }
 
-
-
     .hero-image-frame {
 
         width: min(245px, 76vw);
 
     }
-
-
 
     .about-content,
 
@@ -2466,15 +1878,11 @@ textarea:focus-visible {
 
     }
 
-
-
     .certification-content h3 {
 
         font-size: 1.2rem;
 
     }
-
-
 
     .technology-list span,
 
@@ -2486,11 +1894,7 @@ textarea:focus-visible {
 
     }
 
-
-
 }
-
-
 
 /* =========================================
 
@@ -2498,19 +1902,13 @@ textarea:focus-visible {
 
 \========================================= */
 
-
-
 @media (prefers-reduced-motion: reduce) {
-
-
 
     html {
 
         scroll-behavior: auto;
 
     }
-
-
 
     *,
 
@@ -2524,6 +1922,19 @@ textarea:focus-visible {
 
     }
 
+}
 
-
+/* Inventory project development status */
+.project-status {
+    align-self: flex-start;
+    width: fit-content;
+    padding: 4px 11px;
+    margin: 0 0 14px;
+    border: 1px solid rgba(103, 232, 249, 0.35);
+    border-radius: 100px;
+    background: var(--accent-soft);
+    color: var(--accent-light) !important;
+    font-size: 0.76rem !important;
+    font-weight: 700;
+    line-height: 1.5 !important;
 }
