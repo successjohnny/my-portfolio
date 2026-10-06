@@ -326,7 +326,7 @@
 
                     <h3>Web Development</h3>
 
-                    <ul><li>HTML5</li><li>CSS3</li><li>Jinja2 templates</li></ul>
+                    <ul><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Jinja2 templates</li><li>Chart.js</li></ul>
 
                 </article>
 
@@ -334,7 +334,7 @@
 
                     <h3>AI-Native Development</h3>
 
-                    <ul><li>AI fundamentals</li><li>AI-assisted development</li><li>Prompt engineering</li></ul>
+                    <ul><li>OpenAI API integration</li><li>OpenAI Python SDK</li><li>AI-assisted inventory analysis</li><li>Structured prompting with application data</li><li>Prompt engineering</li><li>Mocked AI testing</li></ul>
 
                 </article>
 
@@ -378,32 +378,32 @@
 
                     <div class="project-number">01</div>
 
-                    <p class="project-status">In development</p>
+                    <p class="project-status">Live · AI-assisted</p>
 
                     <h3>Inventory Management System</h3>
 
-                    <p>A full-stack inventory application built with Python and FastAPI to manage products, track stock movements, and monitor inventory levels.</p>
+                    <p>A deployed full-stack, AI-assisted inventory management application built with Python and FastAPI for product management, stock tracking, reporting, analytics, and secure programmatic access.</p>
 
-                    <p>Implemented product creation, editing, deletion and search; stock-in and stock-out processing; low-stock monitoring; dashboard summaries; stock-movement history; and REST API endpoints.</p>
-                    <p>Uses SQLAlchemy ORM, PostgreSQL hosted on Aiven, Alembic database migrations, and Pydantic validation. Security features include administrator authentication, password hashing, session protection, CSRF protection, and token-secured API endpoints. The application is covered by an automated Pytest and HTTPX test suite with <strong>130 tests passing</strong>.</p>
+                    <p>Features product and supplier management, stock-in/out processing, low-stock monitoring, date-filtered movement history, CSV exports, inventory valuation, category and supplier analytics, interactive Chart.js dashboard visualizations, REST API filtering, sorting and pagination, plus application/database health monitoring.</p>
+
+                    <p>Integrates the <strong>OpenAI API</strong> to turn structured, deterministic inventory facts into natural-language analysis and recommendations while Python remains authoritative for quantities, valuations, low-stock status, and rule-based recommendations. AI and reporting endpoints are protected with bearer-token authentication, while the browser interface uses administrator authentication, password hashing, secure sessions and CSRF protection.</p>
+
+                    <p>Deployed on Render with PostgreSQL hosted on Aiven, SQLAlchemy ORM and Alembic migrations. The project is covered by an automated Pytest/HTTPX suite with <strong>229 tests passing</strong>, including mocked AI integration tests that avoid paid API requests during automated testing.</p>
 
                     <div class="technology-list">
 
-                        <span>Python</span><span>FastAPI</span><span>REST APIs</span>
-
-                        <span>PostgreSQL</span><span>Aiven</span><span>SQLAlchemy</span>
-
-                       <span>SQLite</span><span>Alembic</span><span>Pydantic</span>
-
-                        <span>Authentication</span><span>CSRF Protection</span><span>API Security</span>
-                        <span>Pytest</span><span>HTTPX</span><span>Jinja2</span>
-
-                        <span>HTML</span><span>CSS</span>
+                        <span>Python</span><span>FastAPI</span><span>OpenAI API</span><span>OpenAI SDK</span>
+                        <span>REST APIs</span><span>PostgreSQL</span><span>Aiven</span><span>SQLAlchemy</span>
+                        <span>Alembic</span><span>Pydantic</span><span>Authentication</span><span>CSRF Protection</span>
+                        <span>Bearer Token Security</span><span>Pytest</span><span>HTTPX</span><span>Jinja2</span>
+                        <span>JavaScript</span><span>Chart.js</span><span>CSV Reporting</span><span>Render</span>
 
                     </div>
 
                     <div class="project-links">
 
+                        <a href="https://inventory-management-system-ycyy.onrender.com" class="project-link" target="_blank" rel="noopener noreferrer">View Live App</a>
+                        <a href="https://inventory-management-system-ycyy.onrender.com/docs" class="project-link" target="_blank" rel="noopener noreferrer">API Docs</a>
                         <a href="https://github.com/successjohnny/inventory-management-system" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
 
                     </div>

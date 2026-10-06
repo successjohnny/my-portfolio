@@ -8,45 +8,45 @@
 
 /* =========================================
 
-   1. DESIGN SYSTEM
+   1\. DESIGN SYSTEM
 
 \========================================= */
 
 :root {
 
-    \--bg: #0f172a;
+    \\--bg: #0f172a;
 
-    \--bg-deep: #0b1220;
+    \\--bg-deep: #0b1220;
 
-    \--surface: #152238;
+    \\--surface: #152238;
 
-    \--surface-hover: #1b2c46;
+    \\--surface-hover: #1b2c46;
 
-    \--accent: #67e8f9;
+    \\--accent: #67e8f9;
 
-    \--accent-light: #a5f3fc;
+    \\--accent-light: #a5f3fc;
 
-    \--accent-soft: rgba(103, 232, 249, 0.10);
+    \\--accent-soft: rgba(103, 232, 249, 0.10);
 
-    \--heading: #f8fafc;
+    \\--heading: #f8fafc;
 
-    \--text: #cbd5e1;
+    \\--text: #cbd5e1;
 
-    \--muted: #a8b7cc;
+    \\--muted: #a8b7cc;
 
-    \--border: #334155;
+    \\--border: #334155;
 
-    \--radius: 18px;
+    \\--radius: 18px;
 
-    \--container: 1180px;
+    \\--container: 1180px;
 
-    \--shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+    \\--shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
 
 }
 
 /* =========================================
 
-   2. RESET AND GENERAL STYLES
+   2\. RESET AND GENERAL STYLES
 
 \========================================= */
 
@@ -134,7 +134,7 @@ button {
 
 /* =========================================
 
-   3. NAVIGATION
+   3\. NAVIGATION
 
 \========================================= */
 
@@ -256,7 +256,7 @@ header {
 
 /* =========================================
 
-   4. HERO SECTION
+   4\. HERO SECTION
 
 \========================================= */
 
@@ -380,7 +380,7 @@ header {
 
 /* =========================================
 
-   5. BUTTONS
+   5\. BUTTONS
 
 \========================================= */
 
@@ -480,7 +480,7 @@ header {
 
 /* =========================================
 
-   6. HERO PROFILE IMAGE
+   6\. HERO PROFILE IMAGE
 
 \========================================= */
 
@@ -548,7 +548,7 @@ header {
 
 /* =========================================
 
-   7. SHARED SECTIONS
+   7\. SHARED SECTIONS
 
 \========================================= */
 
@@ -612,7 +612,7 @@ header {
 
 /* =========================================
 
-   8. ABOUT
+   8\. ABOUT
 
 \========================================= */
 
@@ -654,7 +654,7 @@ header {
 
 /* =========================================
 
-   9. SHARED CARD DESIGN
+   9\. SHARED CARD DESIGN
 
 \========================================= */
 
@@ -714,7 +714,7 @@ header {
 
 /* =========================================
 
-   10. SKILLS
+   10\. SKILLS
 
 \========================================= */
 
@@ -784,7 +784,7 @@ header {
 
 /* =========================================
 
-   11. PROJECTS
+   11\. PROJECTS
 
 \========================================= */
 
@@ -866,7 +866,7 @@ header {
 
 /* =========================================
 
-   12. TECHNOLOGY BADGES
+   12\. TECHNOLOGY BADGES
 
 \========================================= */
 
@@ -914,7 +914,7 @@ header {
 
 /* =========================================
 
-   13. PROJECT LINKS
+   13\. PROJECT LINKS
 
 \========================================= */
 
@@ -976,7 +976,7 @@ header {
 
 /* =========================================
 
-   14. CERTIFICATIONS
+   14\. CERTIFICATIONS
 
 \========================================= */
 
@@ -1120,7 +1120,7 @@ header {
 
 /* =========================================
 
-   15. EXPERIENCE
+   15\. EXPERIENCE
 
 \========================================= */
 
@@ -1202,7 +1202,7 @@ header {
 
 /* =========================================
 
-   16. CONTACT
+   16\. CONTACT
 
 \========================================= */
 
@@ -1288,7 +1288,7 @@ header {
 
 /* =========================================
 
-   17. CONTACT FORM
+   17\. CONTACT FORM
 
 \========================================= */
 
@@ -1396,7 +1396,7 @@ header {
 
 /* =========================================
 
-   18. FOOTER
+   18\. FOOTER
 
 \========================================= */
 
@@ -1430,7 +1430,7 @@ footer p:last-child {
 
 /* =========================================
 
-   19. KEYBOARD ACCESSIBILITY
+   19\. KEYBOARD ACCESSIBILITY
 
 \========================================= */
 
@@ -1450,7 +1450,7 @@ textarea:focus-visible {
 
 /* =========================================
 
-   20. TABLET
+   20\. TABLET
 
 \========================================= */
 
@@ -1518,7 +1518,7 @@ textarea:focus-visible {
 
 /* =========================================
 
-   21. MOBILE NAVIGATION AND LAYOUT
+   21\. MOBILE NAVIGATION AND LAYOUT
 
 \========================================= */
 
@@ -1676,7 +1676,7 @@ textarea:focus-visible {
 
 /* =========================================
 
-   22. SMALL TABLETS AND PHONES
+   22\. SMALL TABLETS AND PHONES
 
 \========================================= */
 
@@ -1814,7 +1814,7 @@ textarea:focus-visible {
 
 /* =========================================
 
-   23. VERY SMALL PHONES
+   23\. VERY SMALL PHONES
 
 \========================================= */
 
@@ -1898,7 +1898,7 @@ textarea:focus-visible {
 
 /* =========================================
 
-   24. REDUCED MOTION
+   24\. REDUCED MOTION
 
 \========================================= */
 
@@ -1925,29 +1925,51 @@ textarea:focus-visible {
 }
 
 /* Inventory project development status */
+
 .project-status {
+
     align-self: flex-start;
+
     width: fit-content;
+
     padding: 4px 11px;
+
     margin: 0 0 14px;
+
     border: 1px solid rgba(103, 232, 249, 0.35);
+
     border-radius: 100px;
+
     background: var(--accent-soft);
+
     color: var(--accent-light) !important;
+
     font-size: 0.76rem !important;
+
     font-weight: 700;
+
     line-height: 1.5 !important;
+
 }
 
 /* Professional membership card */
+
 .certifications-container {
+
     display: grid;
+
     gap: 24px;
+
 }
 
 .membership-monogram {
+
     color: var(--accent);
+
     font-size: 1.7rem;
+
     font-weight: 800;
+
     letter-spacing: 0.04em;
+
 }
