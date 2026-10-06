@@ -14,33 +14,33 @@
 
 :root {
 
-    \\--bg: #0f172a;
+    --bg: #0f172a;
 
-    \\--bg-deep: #0b1220;
+    --bg-deep: #0b1220;
 
-    \\--surface: #152238;
+    --surface: #152238;
 
-    \\--surface-hover: #1b2c46;
+    --surface-hover: #1b2c46;
 
-    \\--accent: #67e8f9;
+    --accent: #67e8f9;
 
-    \\--accent-light: #a5f3fc;
+    --accent-light: #a5f3fc;
 
-    \\--accent-soft: rgba(103, 232, 249, 0.10);
+    --accent-soft: rgba(103, 232, 249, 0.10);
 
-    \\--heading: #f8fafc;
+    --heading: #f8fafc;
 
-    \\--text: #cbd5e1;
+    --text: #cbd5e1;
 
-    \\--muted: #a8b7cc;
+    --muted: #a8b7cc;
 
-    \\--border: #334155;
+    --border: #334155;
 
-    \\--radius: 18px;
+    --radius: 18px;
 
-    \\--container: 1180px;
+    --container: 1180px;
 
-    \\--shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
+    --shadow: 0 18px 45px rgba(0, 0, 0, 0.18);
 
 }
 
