@@ -1,3 +1,4 @@
+
 console.log("Portfolio loaded successfully!");
 
 
@@ -39,7 +40,9 @@ navigationLinks.forEach(function (link) {
 
     link.addEventListener("click", function () {
 
-        navLinks.classList.remove("active");
+        if (navLinks) {
+            navLinks.classList.remove("active");
+        }
 
         if (menuToggle) {
 
