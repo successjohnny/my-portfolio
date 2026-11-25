@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 345" role="img" aria-labelledby="title desc">
+<title id="title">Cisco Networking Academy Verified badge</title>
+<desc id="desc">Cisco Networking Academy verified digital credential for Create Digital Content, Communicate and Collaborate Online.</desc>
+<defs>
+  <clipPath id="badgeClip"><rect x="2" y="2" width="346" height="341" rx="25"/></clipPath>
+</defs>
+<g clip-path="url(#badgeClip)">
+  <rect width="350" height="345" fill="#75bf43"/>
+  <g fill="#fff">
+    <rect x="43" y="31" width="5" height="18" rx="2.5"/><rect x="57" y="22" width="5" height="27" rx="2.5"/>
+    <rect x="71" y="9" width="5" height="40" rx="2.5"/><rect x="85" y="25" width="5" height="24" rx="2.5"/>
+    <rect x="99" y="34" width="5" height="15" rx="2.5"/><rect x="113" y="20" width="5" height="29" rx="2.5"/>
+    <rect x="127" y="28" width="5" height="21" rx="2.5"/><rect x="141" y="15" width="5" height="34" rx="2.5"/>
+    <rect x="155" y="32" width="5" height="17" rx="2.5"/>
+  </g>
+  <text x="54" y="68" fill="#fff" font-family="Arial,sans-serif" font-size="27" font-weight="700" letter-spacing="2">CISCO</text>
+  <text x="171" y="43" fill="#092b50" font-family="Arial,sans-serif" font-size="22">Networking</text>
+  <text x="171" y="67" fill="#092b50" font-family="Arial,sans-serif" font-size="22">Academy</text>
+  <rect x="20" y="86" width="310" height="244" rx="18" fill="#fff"/>
+  <path d="M20 105 Q20 86 39 86 H310 Q330 86 330 105 V134 Q260 146 194 151 Q110 159 20 143Z" fill="#09264e"/>
+  <text x="43" y="130" fill="#fff" font-family="Arial,sans-serif" font-size="27" font-weight="700">Verified</text>
+  <path d="M20 143 C91 163 148 151 207 143 C258 136 294 107 330 104 V191 C272 205 241 228 177 219 C106 209 65 190 20 205Z" fill="#4d913b"/>
+  <path d="M20 205 C73 188 116 214 175 220 C240 227 274 198 330 177 V245 C272 267 237 260 182 253 C117 245 69 246 20 273Z" fill="#b9df9b"/>
+  <path d="M20 273 C73 242 111 250 169 257 C226 264 272 270 330 245 V289 C269 299 242 282 188 283 C119 285 71 302 20 290Z" fill="#6fbd43"/>
+  <path d="M20 290 C81 313 112 302 172 289 C232 277 273 292 330 289 V330 H20Z" fill="#4d8f39"/>
+  <path d="M20 289 C83 310 124 301 177 289 C231 277 279 288 330 279 V330 H20Z" fill="#fff"/>
+  <text x="318" y="291" text-anchor="end" fill="#10264a" font-family="Arial,sans-serif" font-size="15">Create Digital Content,</text>
+  <text x="318" y="313" text-anchor="end" fill="#10264a" font-family="Arial,sans-serif" font-size="14">Communicate, and Collaborate Online</text>
+</g>
+<rect x="2" y="2" width="346" height="341" rx="25" fill="none" stroke="#75bf43" stroke-width="4"/>
+</svg>
